@@ -1,0 +1,162 @@
+/* The kit's tokens and global rules (CRAFT.md §16). Imported once, right after `@import "tailwindcss"`; the colours
+   themselves are theme.css, generated and contrast-checked by modules/kit/theme/build-theme.mjs. */
+@theme inline {
+  /* Accent-coloured TEXT (today, the active tab, a link): never `text-primary`, which is the button fill and too
+     dark to read on a dark surface. --primary-text is tuned per theme to pass 4.5:1 on every surface. */
+  --color-primary-text: var(--primary-text);
+  /* The selected row / the record open beside the list: visible next to a hover (bg-muted/50), never a status. */
+  --color-selected: var(--selected);
+  /* The edge of a small control a person must find: a checkbox, a radio (3:1, where an input's border is 1.7:1). */
+  --color-control: var(--control);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-info: var(--info);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  /* Motion: one curve, four durations (lib/motion mirrors them). Hover and press = fast, menus and popovers = base,
+     dialogs = slow, sheets = slower. Keyboard actions, ⌘K, list selection, route changes, row hover and remote updates
+     don't animate at all. */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --duration-fast: 100ms;
+  --duration-base: 150ms;
+  --duration-slow: 200ms;
+  --duration-slower: 250ms;
+  --default-transition-duration: var(--duration-fast);
+  --default-transition-timing-function: var(--ease-out);
+}
+
+/* Type: six roles, one size each (CRAFT.md §8). Use the role, never a size: `text-title`, not `text-lg font-semibold`
+   or `text-[1.125rem]`. Weight and tracking come with the role; 400 / 500 / 600 are the only weights. */
+@theme {
+  /* Tailwind's own scale, aligned to the roles, so shadcn's primitives and any added later land on them too:
+     text-sm IS the body size (13 px), text-xs the caption, text-lg the title. */
+  --text-sm: 0.8125rem;
+  --text-sm--line-height: 1.25rem;
+  --text-metric: 1.5rem;          /* a key number on a stat card */
+  --text-metric--line-height: 2rem;
+  --text-metric--font-weight: 600;
+  --text-metric--letter-spacing: -0.02em;
+  --text-title: 1.125rem;         /* the page title, a sheet's / dialog's title */
+  --text-title--line-height: 1.5rem;
+  --text-title--font-weight: 600;
+  --text-title--letter-spacing: -0.012em;
+  --text-heading: 0.875rem;       /* a card's / section's / column's title */
+  --text-heading--line-height: 1.25rem;
+  --text-heading--font-weight: 600;
+  --text-heading--letter-spacing: -0.006em;
+  --text-body: 0.8125rem;         /* everything else: cells, controls, labels, menus, body copy */
+  --text-body--line-height: 1.25rem;
+  --text-caption: 0.75rem;        /* secondary lines, column headers, hints, badges, timestamps */
+  --text-caption--line-height: 1rem;
+  --text-micro: 0.6875rem;        /* a count in a pill, a kbd: never a sentence */
+  --text-micro--line-height: 1rem;
+}
+
+/* One focus ring, everywhere: 2 px of the accent, 2 px off the edge. `focus-ring-inset` for rows and cells, where
+   an outer ring would be clipped by the table. Never a ring on mouse click (focus-visible only). */
+@utility focus-ring {
+  &:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
+}
+@utility focus-ring-inset {
+  &:focus-visible { outline: 2px solid var(--ring); outline-offset: -2px; }
+}
+
+/* A safety net: `text-primary` on a dark surface would be the button fill (too dark to read); show the text tone. */
+.dark .text-primary { color: var(--primary-text); }
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-optical-sizing: auto;
+  }
+  /* Numbers that line up: every table, every counter. */
+  table, [data-slot="badge"], [data-slot="status-badge"], kbd { font-variant-numeric: tabular-nums; }
+  ::selection { background: color-mix(in oklch, var(--primary) 22%, transparent); }
+}
+
+/* Phone: every control is a 44 px touch target. */
+@media (max-width: 639px) {
+  [data-slot="button"], [data-variant][data-size], [data-slot="select-trigger"], [data-slot="input"],
+  [data-slot="sidebar-menu-button"], [data-kit="palette-button"], [cmdk-item] {
+    min-height: 2.75rem;
+  }
+  /* A panel's "All activity" link is text, and still a thing a thumb has to hit. */
+  [data-kit="scroll-pane"] header a { display: inline-flex; align-items: center; min-height: 2.75rem; }
+  /* A panel's header keeps its height: the target overhangs the header's own padding instead. */
+  [data-kit="panel-header"] a, [data-kit="panel-header"] button { margin-block: -0.75rem; }
+  /* Icon-only buttons (the menu trigger, the theme toggle) are square: give them the width too. */
+  [data-size^="icon"], [data-slot="sidebar-trigger"] { min-width: 2.75rem; min-height: 2.75rem; }
+}
+
+/* The phone tab bar owns the bottom of the screen: lift floating launchers (@xano-sdk/chatbot's) above it. */
+@media (max-width: 767px) {
+  :root:has([data-kit="bottom-nav"]) { --chat-offset: 3.75rem; }
+}
+
+/* The assistant docked down the side (@xano-sdk/chatbot's ChatWidget): the page makes room beside it. */
+@media (min-width: 640px) {
+  html[data-chat-dock="right"] body { padding-right: var(--chat-dock); }
+  html[data-chat-dock="left"] body { padding-left: var(--chat-dock); }
+}
+
+/* A floating chat launcher never covers the end of a page. */
+:root:has([data-testid="chat-widget-launcher"]) [data-kit="scroll-pane"] > div { padding-bottom: 6rem; }
+
+/* A modal (a sheet, a dialog) turns pointer events off outside itself; its toasts' Undo must stay clickable. */
+[data-sonner-toaster] { pointer-events: auto; }
+
+/* A horizontal strip that scrolls instead of wrapping (status tabs, kanban on a phone). */
+.kit-scroll-x {
+  overflow-x: auto;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+}
+.kit-scroll-x::-webkit-scrollbar { display: none; }
+
+/* tw-animate-css's enter and exit run at the motion tokens, not its own 150 ms default. */
+[data-state="open"].animate-in, [data-state="closed"].animate-out { animation-timing-function: var(--ease-out); }
+
+/* Reduced motion: nothing moves, and fades stay. tw-animate-css builds every enter and exit from these variables, so
+   zeroing them leaves its opacity change and takes out the slide and the zoom. Transitions keep only what fades. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    --tw-enter-translate-x: 0 !important;
+    --tw-enter-translate-y: 0 !important;
+    --tw-exit-translate-x: 0 !important;
+    --tw-exit-translate-y: 0 !important;
+    --tw-enter-scale: 1 !important;
+    --tw-exit-scale: 1 !important;
+    --tw-enter-rotate: 0 !important;
+    --tw-exit-rotate: 0 !important;
+    transition-property: opacity, color, background-color, border-color !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* A message that's still sending says so only once it has taken a moment. */
+@keyframes fade-in-late { to { opacity: 1; } }
+
+/* While someone's typing on a phone, the keyboard needs the bottom bar's height more than they need the bar. */
+body:has([data-kit="composer"] textarea:focus) [data-kit="bottom-nav"] { display: none; }
+
+/* The rbac module's Team page draws everyone round. An agent's row carries the Agent tag, so its avatar can follow. */
+[data-testid="team-member-row"]:has([data-testid="agent-mark"]) td:first-child span[aria-hidden]:first-child {
+  border-radius: 28%;
+  background: var(--agent-wash);
+  color: var(--agent-text);
+}
+[data-testid="team-member-kind"] {
+  display: none;
+}
+
+/* The modules' own page titles (Team, Connect an agent) take the app's title role, so a page title looks the same on every screen. */
+[data-slot="sidebar-inset"] h1.text-lg {
+  font-size: var(--text-title);
+  line-height: var(--text-title--line-height);
+  letter-spacing: var(--text-title--letter-spacing);
+  font-weight: 600;
+}

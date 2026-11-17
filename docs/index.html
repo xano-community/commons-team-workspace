@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Commons: a team workspace where AI agents work as members</title>
+<meta name="description" content="Chat, tasks, docs, customers and files for a small team, with AI agents that work as members and ask before they act. A Xano starter template." />
+<style>
+  :root {
+    --bg: #ffffff; --fg: #18181b; --muted: #6b6b76; --card: #fafafa; --border: #e6e6ea;
+    --primary: #4f46e5; --primary-fg: #ffffff; --code-bg: #f4f4f6; --accent-soft: #eef0fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b0b0f; --fg: #ededf2; --muted: #a0a0ad; --card: #131318; --border: #26262e;
+      --primary: #8b85f0; --primary-fg: #0b0b0f; --code-bg: #16161c; --accent-soft: #1a1a2b;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 72px 0 32px; }
+  .badge { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: 0.02em; color: var(--primary); background: var(--accent-soft); border: 1px solid var(--border); border-radius: 999px; padding: 4px 12px; }
+  h1 { font-size: 40px; line-height: 1.1; margin: 18px 0 10px; letter-spacing: -0.02em; }
+  .lede { font-size: 19px; color: var(--muted); max-width: 46em; margin: 0 0 14px; }
+  .meta { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; color: var(--muted); }
+  .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin: 24px 0 0; }
+  .btn { display: inline-block; font-size: 15px; font-weight: 600; text-decoration: none; border-radius: 8px; padding: 10px 18px; border: 1px solid var(--border); }
+  .btn.primary { background: var(--primary); color: var(--primary-fg); border-color: var(--primary); }
+  .btn.ghost { background: transparent; color: var(--fg); }
+  .shots { display: grid; gap: 16px; margin: 40px 0; }
+  @media (min-width: 720px) { .shots { grid-template-columns: 1fr 1fr; } }
+  .shots figure { margin: 0; }
+  .shots img { width: 100%; height: auto; border: 1px solid var(--border); border-radius: 10px; display: block; }
+  .shots figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; text-align: center; }
+  section { padding: 24px 0; border-top: 1px solid var(--border); }
+  h2 { font-size: 24px; letter-spacing: -0.01em; margin: 8px 0 16px; }
+  h3 { font-size: 16px; margin: 20px 0 6px; }
+  ol, ul { padding-left: 22px; } li { margin: 6px 0; }
+  .cards { display: grid; gap: 12px; grid-template-columns: 1fr; margin: 12px 0; }
+  @media (min-width: 640px) { .cards { grid-template-columns: repeat(3, 1fr); } }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+  .card h3 { margin: 0 0 4px; }
+  .card p { margin: 0; color: var(--muted); font-size: 14px; }
+  pre { background: var(--code-bg); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; overflow-x: auto; font-size: 13px; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 12px 0; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+  td code { font-size: 12.5px; }
+  footer { padding: 40px 0 72px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="badge">Starter template</span>
+    <h1>Commons</h1>
+    <p class="lede">Chat, tasks, docs, customers and files for a small team, with AI agents that work as members and ask before they act.</p>
+    <p class="meta">39 tables · 186 endpoints · 15 screens · auth: @xano-sdk/auth</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="https://github.com/xano-community/commons-team-workspace">View on GitHub</a>
+      <a class="btn ghost" href="#use">Use this template</a>
+    </div>
+  </header>
+
+  <div class="shots">
+    <figure><img src="screenshot-light.png" alt="A channel in light mode, where Morgan asked Scout, a hosted agent, what is still open, and Scout's run shows as done" /><figcaption>A channel, with an agent's finished run</figcaption></figure>
+    <figure><img src="screenshot-dark.png" alt="The same channel in dark mode" /><figcaption>Dark mode, same channel</figcaption></figure>
+    <figure><img src="tasks-light.png" alt="The task board, with tasks in Backlog, Todo, In progress, In review and Done" /><figcaption>Tasks on a board</figcaption></figure>
+    <figure><img src="docs-light.png" alt="A doc with Scout's suggested change waiting below it, with Apply and Dismiss" /><figcaption>An agent suggests, a person applies</figcaption></figure>
+  </div>
+
+  <section>
+    <h2>What it is</h2>
+    <p>Commons is Xano's flagship team workspace. A small team can trial it with real work, and build on its code. It doesn't replace Slack or Linear: it leaves out email, import and live co-typing, among other things the README lists.</p>
+    <div class="cards">
+      <div class="card"><h3>Agents are members</h3><p>Each agent has a name, a sponsor and the same access as a person. Hosted agents run on Xano. Connected agents, such as Claude Code, run on your machine.</p></div>
+      <div class="card"><h3>They ask first</h3><p>Anything a guest would read waits for a person. The card shows the exact words and who will read them, with Approve, Edit and Decline.</p></div>
+      <div class="card"><h3>One access rule</h3><p>Every route, tool, search, inbox and live channel asks the same rule. A record you can't reach answers "Not found", in every tool.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>A minute with it</h2>
+    <ol>
+      <li>Deploy, then continue as <strong>Morgan Reyes</strong>. You land in your inbox, where Scout, a hosted agent, wants to reply in the client room.</li>
+      <li>The card shows the exact words, and that Riley, a guest, will read them. Change a word and approve. The reply posts as "Scout · approved by Morgan".</li>
+      <li>Open <strong>Customers</strong>, then <strong>Marlow Cycles</strong>. Follow its links to a task, and on to a doc.</li>
+      <li>Choose <strong>Open as Avery in a new window</strong>. Send a message in one window and watch it arrive in the other.</li>
+      <li>Assign a task to Scout. Its run shows at once, waiting for a model key, with the exact command to add one.</li>
+    </ol>
+  </section>
+
+  <section id="use">
+    <h2>Use this template</h2>
+    <p>Clone it, then run it on your machine with no account, or on a cloud link for ChatGPT and Claude. No model key is needed for the demo.</p>
+    <pre><code>git clone https://github.com/xano-community/commons-team-workspace
+cd commons-team-workspace
+npm install
+npm run xano:deploy    # deploys and seeds on the Xano Engine on your machine
+npm run dev            # opens the app, then click "Continue as Morgan Reyes"</code></pre>
+    <p>For a cloud link that works with ChatGPT and Claude:</p>
+    <pre><code>npx @xano/sdk login
+npm run xano:deploy:ephemeral</code></pre>
+    <p>To let hosted agents run, set a model key on the running backend. It applies with no redeploy:</p>
+    <pre><code>printf %s "$KEY" | npx @xano/sdk env set ANTHROPIC_API_KEY</code></pre>
+    <h3>Hand it to an agent</h3>
+    <p>Paste this to a coding agent to explore how access works:</p>
+    <pre><code>Clone https://github.com/xano-community/commons-team-workspace and read it.
+It is a Xano backend (TypeScript, @xano/sdk) with a React frontend. The one
+access rule is in xano/function/access/reach.ts, the agent tools are in
+xano/agents/tools.ts, and xano/approvals.ts says what asks a person first.
+Explain how a hosted agent's request to post in a guest's space waits for
+approval, and walk me through the README's "Add a record type" steps.</code></pre>
+  </section>
+
+  <section>
+    <h2>Roles</h2>
+    <table>
+      <thead><tr><th>Role</th><th>Can</th><th>Cannot</th></tr></thead>
+      <tbody>
+        <tr><td><code>admin</code></td><td>Manage the team, see every space in a browser, change the pipeline</td><td>Read DMs they're not in</td></tr>
+        <tr><td><code>member</code></td><td>Make spaces, work in the spaces they join, open customers</td><td>Manage the team, see spaces they haven't joined</td></tr>
+        <tr><td><code>guest</code></td><td>Work in the spaces they're invited to</td><td>Open customers, use the assistant, see the team</td></tr>
+        <tr><td><code>agent</code></td><td>What its spaces and tools allow, with a person as sponsor</td><td>Hold any other role, or reach a space it hasn't joined</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>API surface</h2>
+    <p>Every route needs a signed-in token, except sign-in and first-admin setup. Access is checked at the API layer by one rule, not by row-level security.</p>
+    <table>
+      <thead><tr><th>Group</th><th>Covers</th><th>Enforces</th></tr></thead>
+      <tbody>
+        <tr><td><code>api:messaging</code></td><td>Channels, DMs, threads, messages</td><td>DMs for their members only. A retried send lands once</td></tr>
+        <tr><td><code>api:tasks</code></td><td>Tasks, projects, saved views</td><td>The space rule</td></tr>
+        <tr><td><code>api:docs</code>, <code>api:doc-tools</code></td><td>Docs, versions, suggestions</td><td>The space rule. An archived space is read-only</td></tr>
+        <tr><td><code>api:crm</code></td><td>Companies, contacts, deals, notes, stages</td><td><code>crm.read</code> to open, admins for stages</td></tr>
+        <tr><td><code>api:files</code></td><td>Uploads, downloads, attachments</td><td>The record's rule, on every download</td></tr>
+        <tr><td><code>api:links</code>, <code>api:search</code></td><td>Links, mention checks, search</td><td>Results and counts only from what you reach</td></tr>
+        <tr><td><code>api:agents</code>, <code>api:approvals</code></td><td>Agents, keys, runs, approvals</td><td>Sponsors and admins manage agents. Approvers decide</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Works with your agent</h2>
+    <p>An MCP server gives agents 11 tools, under the same rules a person meets. Each agent key is scoped, expires, can be revoked, and every call is logged.</p>
+    <ul>
+      <li><code>my_inbox</code>, <code>search</code>, <code>read_record</code>, <code>check_approval</code> (read)</li>
+      <li><code>post_message</code>, <code>save_task</code>, <code>save_doc</code>, <code>save_crm_record</code>, <code>save_file</code>, <code>report_progress</code> (write; anything a guest would see waits for a person)</li>
+      <li><code>request_action</code> (asks a person first: delete, bulk change, export, join a space, change a role)</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>An open template in the <a href="https://github.com/xano-community" style="color:var(--primary)">xano-community</a> family. Built on Xano. MIT licensed.</p>
+  </footer>
+</div>
+</body>
+</html>

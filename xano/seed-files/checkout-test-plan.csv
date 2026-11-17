@@ -1,0 +1,5 @@
+Case,Card,Amount,Expect,Who
+Card payment,4242 4242 4242 4242,EUR 1.00,Paid and confirmed by email,Morgan
+Refund,Same order,EUR 1.00,Refunded within the hour,Morgan
+Failed payment,4000 0000 0000 0002,EUR 1.00,Declined with a clear message,Morgan
+EU tax,German address,EUR 1.00,19 percent VAT on the receipt,Avery

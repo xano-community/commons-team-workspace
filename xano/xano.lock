@@ -1,0 +1,2741 @@
+{
+  "version": 1,
+  "objects": {
+    "app:Authentication": {
+      "guid": "418bb3d99f5c721ab78c30d97d651e90",
+      "canonical": "authn",
+      "canonical_source": "code",
+      "guid_source": "code"
+    },
+    "app:Chatbot": {
+      "guid": "d38a9e1caf83cf798a8883cbb0e83b99",
+      "canonical": "chat",
+      "canonical_source": "code"
+    },
+    "app:MCP OAuth": {
+      "guid": "c28ec38f91b73b91d20ba717a4ef256c",
+      "canonical": "mcp-oauth-team-workspace",
+      "canonical_source": "code"
+    },
+    "app:agent": {
+      "guid": "8fe6c1adc68a153ab4b46550a7faf4b3",
+      "canonical": "agent",
+      "canonical_source": "code"
+    },
+    "app:agent-loop": {
+      "guid": "52979ec4ce304bd44a46511a239b5f65",
+      "canonical": "agent-loop",
+      "canonical_source": "code"
+    },
+    "app:agents": {
+      "guid": "f85e06e3149f10714ddaca14c77bace8",
+      "canonical": "agents",
+      "canonical_source": "code"
+    },
+    "app:app": {
+      "guid": "9cfec81047ef194e6f8525859a73c4e2",
+      "canonical": "app",
+      "canonical_source": "code"
+    },
+    "app:approvals": {
+      "guid": "e78457b07ab49187cf3102d207f40454",
+      "canonical": "approvals",
+      "canonical_source": "code"
+    },
+    "app:changes": {
+      "guid": "0f609b6714bd95e024c1067fdfd33e74",
+      "canonical": "changes",
+      "canonical_source": "code"
+    },
+    "app:crm": {
+      "guid": "5c82518abad1056a7bee23996e04444e",
+      "canonical": "crm",
+      "canonical_source": "code"
+    },
+    "app:doc-tools": {
+      "guid": "38804c562b97e310a8b94d5e8cde63c1",
+      "canonical": "doc-tools",
+      "canonical_source": "code"
+    },
+    "app:docs": {
+      "guid": "6ea22b209721166f2c5b5dd2241cbbf2",
+      "canonical": "docs",
+      "canonical_source": "code"
+    },
+    "app:files": {
+      "guid": "6bd29b3e7281a645ee257818be8cef78",
+      "canonical": "files",
+      "canonical_source": "code"
+    },
+    "app:links": {
+      "guid": "f16d235dfae35b7bea29f86fbe0ffcd7",
+      "canonical": "links",
+      "canonical_source": "code"
+    },
+    "app:members": {
+      "guid": "512147a95e8740a5c433d4d30c15e342",
+      "canonical": "members",
+      "canonical_source": "code"
+    },
+    "app:messaging": {
+      "guid": "c8b59d23faf05818043de73b57646639",
+      "canonical": "messaging",
+      "canonical_source": "code"
+    },
+    "app:rbac": {
+      "guid": "e229bc569c09d4eee6b5d86b87faf61a",
+      "canonical": "rbac",
+      "canonical_source": "code"
+    },
+    "app:search": {
+      "guid": "a9e105d27524743126908882577a186a",
+      "canonical": "search",
+      "canonical_source": "code"
+    },
+    "app:spaces": {
+      "guid": "45778d1b87ef3cc346cffabc9a7e55b0",
+      "canonical": "spaces",
+      "canonical_source": "code"
+    },
+    "app:tasks": {
+      "guid": "c780eba02fda21308a6f264115547854",
+      "canonical": "tasks",
+      "canonical_source": "code"
+    },
+    "channel:live|app": {
+      "guid": "4ee152ab7c9319f847d302a24a3dcfdd"
+    },
+    "channel:live|crm": {
+      "guid": "a7920eb174465adcf6e9a063a8cd8a89"
+    },
+    "channel:live|docs/{doc_id}": {
+      "guid": "a4d455f4603cad4ec077e30711fd2547"
+    },
+    "channel:live|rooms/{room}": {
+      "guid": "fd8a835249ae79c78f5f83e833e6a283"
+    },
+    "channel:live|spaces/{space_id}": {
+      "guid": "dd692217d0776342b26882f171d19c41"
+    },
+    "channel:live|typing/{conversation_id}": {
+      "guid": "28c801f31d8344e4499226bcf38705fd"
+    },
+    "channel:live|users/{user_id}": {
+      "guid": "5a8be675f38a010d734f93811db619ec"
+    },
+    "dbo:access_link": {
+      "guid": "428c3b2913309fe6992de3caa9690dec"
+    },
+    "dbo:account": {
+      "guid": "f2f78af06c7c59b550823db5edae97bc",
+      "guid_source": "code"
+    },
+    "dbo:activity": {
+      "guid": "40742ffb4f73931a841ced17dc05c22b"
+    },
+    "dbo:agent_activity": {
+      "guid": "ddf573d30230681458ecc3ce1b622148"
+    },
+    "dbo:agent_connection": {
+      "guid": "6bb36e51fa851cc92dca37383ac2e082"
+    },
+    "dbo:agent_run": {
+      "guid": "0ba80a628fa8cf87d8e3d957ee523434"
+    },
+    "dbo:approval": {
+      "guid": "f139daa26901db948305de7008aca3b0"
+    },
+    "dbo:assistant_conversation": {
+      "guid": "d74d7f5a5725a486a18debe65d004357"
+    },
+    "dbo:assistant_message": {
+      "guid": "0d3feeefcc422fd1b04f641e132f4f96"
+    },
+    "dbo:change_channel": {
+      "guid": "a898d54045bc4232e045c2eb323448cd"
+    },
+    "dbo:change_log": {
+      "guid": "f2074a383b6f59f758119f7f41835fb6"
+    },
+    "dbo:company": {
+      "guid": "efc96528015ede7d10d4f90c35592e83"
+    },
+    "dbo:contact": {
+      "guid": "62192f39f08847d0316cdeecebdffb29"
+    },
+    "dbo:conversation": {
+      "guid": "82dcb96c2b194384d632c35b67d6bd52"
+    },
+    "dbo:conversation_member": {
+      "guid": "0c901454576402338e6a0cb017912bc0"
+    },
+    "dbo:conversation_read": {
+      "guid": "20f48ef9fc43130bd3363aff703754de"
+    },
+    "dbo:crm_note": {
+      "guid": "c7c4880a2ddf7a863f9fc768ea502dde"
+    },
+    "dbo:deal": {
+      "guid": "cdd3b5da07974da9073f2f8671501336"
+    },
+    "dbo:demo_persona": {
+      "guid": "5214cb34a1a30ecfb614ff09d270340e"
+    },
+    "dbo:doc": {
+      "guid": "bde0e6762f3d8749075adc7e4364ecc4"
+    },
+    "dbo:doc_state": {
+      "guid": "19092e42a51e04e63e6e71a568a19fc4"
+    },
+    "dbo:doc_suggestion": {
+      "guid": "de7cbe5429cd2e170d10c96d8b0c5c26"
+    },
+    "dbo:doc_version": {
+      "guid": "37fcec26ce84c828b21d353f9603fade"
+    },
+    "dbo:event_log": {
+      "guid": "e9148697952846994def7eb0a467d6cd",
+      "guid_source": "code"
+    },
+    "dbo:file_blob": {
+      "guid": "5cf8e4ea94d27c71e44f40e4803898e3"
+    },
+    "dbo:file_record": {
+      "guid": "3d76fcb6f0b0b5a24ac2f214df86a534"
+    },
+    "dbo:message": {
+      "guid": "cad941709b380b513a5da3a918fb9c83"
+    },
+    "dbo:notification": {
+      "guid": "82aa02f0fec38d41c31e06e20dbbc94b"
+    },
+    "dbo:pipeline_stage": {
+      "guid": "e2d6a34e7ce3100c248e856f400331ab"
+    },
+    "dbo:project": {
+      "guid": "9112979b32a4efee147d3075866edc67"
+    },
+    "dbo:record_link": {
+      "guid": "dd6742a0c41842b15cfbbb86f028b735"
+    },
+    "dbo:role_change": {
+      "guid": "be3f462b365b59b14ab9c8c851fb4fe1"
+    },
+    "dbo:search_entry": {
+      "guid": "332875621b4b8e046e1cef40a9de25a7"
+    },
+    "dbo:space": {
+      "guid": "6c2b02840b391efb4528cd11d95640bb"
+    },
+    "dbo:space_member": {
+      "guid": "ec79aea9497b6bdebaa43ac55734520d"
+    },
+    "dbo:task": {
+      "guid": "aa39fb5fe8a063df23e686efa6b7ed28"
+    },
+    "dbo:task_view": {
+      "guid": "c60e27fb3b93a035356d3c2a12495d20"
+    },
+    "dbo:user": {
+      "guid": "efb558104909137dac95907814c26051",
+      "guid_source": "code"
+    },
+    "dbo:workspace_setting": {
+      "guid": "c12607c3844188c2e248aad264abdd47"
+    },
+    "function:Getting Started Template/create_event_log": {
+      "guid": "19bb274c20b194d7fa03ca4bafb3ac4c",
+      "guid_source": "code"
+    },
+    "function:access/after_removal": {
+      "guid": "8988203abe364e6a92da3f7e3abba73e"
+    },
+    "function:access/can_create": {
+      "guid": "99bb99b3258943e4eb42443067416b10"
+    },
+    "function:access/can_join_room": {
+      "guid": "376db409be9adadb5e834c362d91b585"
+    },
+    "function:access/can_manage": {
+      "guid": "01917db8ca7cd130b5492501910f46a0"
+    },
+    "function:access/can_reach": {
+      "guid": "5d4a47f6bba6c8a0570fe4e766d59da9"
+    },
+    "function:access/kick": {
+      "guid": "d46b91a2c186a0093ab3b966bfc00170"
+    },
+    "function:access/reach": {
+      "guid": "41c8a389f6c14c3ac94fa87d6ec85889"
+    },
+    "function:access/rule": {
+      "guid": "88deb10f307a80082a0e72a02f245250"
+    },
+    "function:agent/check_key": {
+      "guid": "05d8edd2bb5af96810184e6a60ef6cd1"
+    },
+    "function:agent/connect": {
+      "guid": "97a45c913f83af24b914074135377557"
+    },
+    "function:agent/revoke": {
+      "guid": "12b8f05147d4f16122aa088255d26b82"
+    },
+    "function:agent/sign_in_connection": {
+      "guid": "429315c57b863c0686fbfee1fbda5582"
+    },
+    "function:agents/after_decision": {
+      "guid": "0f2fda407ad66e8351e9b1fb39ee9668"
+    },
+    "function:agents/approval_changed": {
+      "guid": "f53f80fd335f60b549eb5eac2603a49b"
+    },
+    "function:agents/approval_checks": {
+      "guid": "b4badcbc391218b4af59ea77152032fc"
+    },
+    "function:agents/ask": {
+      "guid": "85bc88238a2d87c8e639d94150af6024"
+    },
+    "function:agents/ask_finish": {
+      "guid": "1ff10ee8aaa020570d7e02c9881dffba"
+    },
+    "function:agents/ask_route": {
+      "guid": "603cddaa7db6309664472ed2de158f9c"
+    },
+    "function:agents/begin": {
+      "guid": "e2ab7abb02acf043bf0c3112f3c2cc77"
+    },
+    "function:agents/bulk_change": {
+      "guid": "63a2d9df5c876472618679288bd4b551"
+    },
+    "function:agents/change_sponsor": {
+      "guid": "87002536112664c2b76afb9134ff3a87"
+    },
+    "function:agents/changed": {
+      "guid": "5662a172c3970f6652243f9c9883c9c7"
+    },
+    "function:agents/claim_oldest": {
+      "guid": "6d54023ce8809ecd5a8f60dd72ad0337"
+    },
+    "function:agents/connected": {
+      "guid": "64f6f4a7248c136ff135b455c7c9c33a"
+    },
+    "function:agents/context": {
+      "guid": "e6f2e3417ab7d157f82301f08905ef1f"
+    },
+    "function:agents/create": {
+      "guid": "fa79cdcb5d49d26ccbe40b99416873de"
+    },
+    "function:agents/delete_record": {
+      "guid": "f545fe809870f0062ba4affcc8401c00"
+    },
+    "function:agents/drain": {
+      "guid": "1d8a35e1e7d63c200b378541f1f25bac"
+    },
+    "function:agents/drive": {
+      "guid": "27c729d2cdb6b678990a4fb9f0198ff5"
+    },
+    "function:agents/expire_approvals": {
+      "guid": "77b01c323378e83eacf1d90515d385b9"
+    },
+    "function:agents/export_crm": {
+      "guid": "1d3d880c238de801788afc916075e5fc"
+    },
+    "function:agents/fail": {
+      "guid": "ad7c4e517163925050387036512a9ac0"
+    },
+    "function:agents/finish": {
+      "guid": "87bf1f2e71e32eac76f28bff909d3a23"
+    },
+    "function:agents/guests_read": {
+      "guid": "0de72e13dd32a50f3f8b5d0844af6f4c"
+    },
+    "function:agents/hand_on": {
+      "guid": "ba7f86cef951cbc64c702989959d28f0"
+    },
+    "function:agents/hosted": {
+      "guid": "d827f85107b74564fbb11208503b4803"
+    },
+    "function:agents/list_keys": {
+      "guid": "672a903a01705d4bcbc368e6de2e5eb7"
+    },
+    "function:agents/list_runs": {
+      "guid": "f7424d26b69b09960e809579eebadf76"
+    },
+    "function:agents/member_gate": {
+      "guid": "4b28fe020d05d659e1ed5e882c1be425"
+    },
+    "function:agents/mention_check": {
+      "guid": "0d8dcf3e4c1c2920204290adb673648f"
+    },
+    "function:agents/mint_key": {
+      "guid": "04510be8cedaeb1a72113f611c4613de"
+    },
+    "function:agents/model_ready": {
+      "guid": "96e87709716204e2a0600f2870c1b981"
+    },
+    "function:agents/pickups": {
+      "guid": "116234587bf6efb32f7e9edfa03c9f14"
+    },
+    "function:agents/plain_error": {
+      "guid": "4894ad9def80fda14a233f80644239df"
+    },
+    "function:agents/plan_request": {
+      "guid": "9d934e464f87143d8df18482110f39f9"
+    },
+    "function:agents/post_message": {
+      "guid": "b7297a2916b65290d322a47aa148c175"
+    },
+    "function:agents/profile": {
+      "guid": "a9a2fe2b02baaceff6c700e2ca709d8b"
+    },
+    "function:agents/read_record": {
+      "guid": "5ce10ba44224d220b5b4f7451ddf8356"
+    },
+    "function:agents/reclaim_stale": {
+      "guid": "7d4035e7e2d1468687489f4f7b3a7624"
+    },
+    "function:agents/report": {
+      "guid": "9d54edf6c9329e5a3a0aafacdd6f1bca"
+    },
+    "function:agents/require_customers": {
+      "guid": "b4b3ccda5991aa69e20a9c41123e8e56"
+    },
+    "function:agents/require_in_scope": {
+      "guid": "324ba1d61b97c18b3a418c540d26152e"
+    },
+    "function:agents/reroute_approvals": {
+      "guid": "2341b542ef9d053633d5bed875437180"
+    },
+    "function:agents/resume": {
+      "guid": "fac8f90da1215ec518281a96666ff4a4"
+    },
+    "function:agents/resume_missed": {
+      "guid": "d050d7b19e1185e36ea61e88bdb0de1e"
+    },
+    "function:agents/retry": {
+      "guid": "28128a00f3a8399fd1493f4c6b1d8cff"
+    },
+    "function:agents/revive": {
+      "guid": "24384811d5c0ce7bc95a12f07208dddf"
+    },
+    "function:agents/revoke_key": {
+      "guid": "181b8c2eed6b160e91bc7fbf4e3fe9a3"
+    },
+    "function:agents/rotate_key": {
+      "guid": "70461e161186fb6e77a17f879b75dddb"
+    },
+    "function:agents/run_args": {
+      "guid": "db9b5f6a7e8750f6cadd5262cc3ce181"
+    },
+    "function:agents/run_steps": {
+      "guid": "e713cda15122205ef6a761f52f7e82c8"
+    },
+    "function:agents/runs_of": {
+      "guid": "7d975427ad8d8c599357302bc99cd547"
+    },
+    "function:agents/save_crm_record": {
+      "guid": "a255bc23a3b96e900f3a3f9ade28d443"
+    },
+    "function:agents/save_doc": {
+      "guid": "56ef52407944f62e466e232341a3c74d"
+    },
+    "function:agents/save_file": {
+      "guid": "acac44e74978e5c9409c826fda099fe5"
+    },
+    "function:agents/save_task": {
+      "guid": "f6efabd761f4d335a5255069885837eb"
+    },
+    "function:agents/set_paused": {
+      "guid": "8b5d5811ad72192bb2c1ff07a4e2fd41"
+    },
+    "function:agents/set_spaces": {
+      "guid": "a4cc793e2f24c55bf470e00b9f0dd193"
+    },
+    "function:agents/settle_approved": {
+      "guid": "18e90983c4e1f0af899c63ea98f7e3f5"
+    },
+    "function:agents/sponsor_choices": {
+      "guid": "a12d84b362a9198870bd04b8396415aa"
+    },
+    "function:agents/stage_named": {
+      "guid": "e4b100e84cad00485466a07cae40e04d"
+    },
+    "function:agents/stamp_via": {
+      "guid": "265424cbc0cb5904ee17975852f6244a"
+    },
+    "function:agents/start": {
+      "guid": "1ecfb773ca6bf82da434507f6be00509"
+    },
+    "function:agents/stop": {
+      "guid": "ecfaec868240858cf19edcd94663468d"
+    },
+    "function:agents/suspend_sponsorless": {
+      "guid": "3d2af316d7be6d11658184c6b780b8bf"
+    },
+    "function:agents/tell_deciders": {
+      "guid": "83aea974f9d71489cd9d4fd5c33c803e"
+    },
+    "function:agents/tell_requester": {
+      "guid": "306bf60096bf29475d65b1bed9292f02"
+    },
+    "function:agents/update": {
+      "guid": "19f5f779ef8a14c773d44489b9243175"
+    },
+    "function:agents/warn_expiring_keys": {
+      "guid": "2c568bd90c88e7ccf2b241d8ca7ea710"
+    },
+    "function:agents/write_gate": {
+      "guid": "dbe148e773ae6c562fa39523e748cc53"
+    },
+    "function:app/activity_page": {
+      "guid": "ed484d23b35cf9529ea3f01214fe9dc0"
+    },
+    "function:app/changed": {
+      "guid": "31990c91200aa3794b2890548916f07b"
+    },
+    "function:app/notify": {
+      "guid": "a6b4f44eaa2c407c288548684186f917"
+    },
+    "function:app/notify_roles": {
+      "guid": "f3bf9a0680d403d6370684d01db9fb60"
+    },
+    "function:approvals/apply_edit": {
+      "guid": "31e1f6ecb958cf60694ff0750037d9fe"
+    },
+    "function:approvals/decide": {
+      "guid": "f0ebceefae0c19d33c76748ff68ac46f"
+    },
+    "function:approvals/on_record": {
+      "guid": "10c9a78a62b1daf85a9b3f62cba43b15"
+    },
+    "function:approvals/overseen": {
+      "guid": "f532fadb3e7e29c706472b71329eca64"
+    },
+    "function:approvals/request": {
+      "guid": "e9a99c0259ffd2ebcc9f190070ce8195"
+    },
+    "function:approvals/view": {
+      "guid": "c27c72582610a639c02d75d8cb9436a1"
+    },
+    "function:approved/bulk": {
+      "guid": "84df0b47f9427161b658a505ace3fcc9"
+    },
+    "function:approved/customer": {
+      "guid": "fc27b5ed2c879f6264364f36866d2657"
+    },
+    "function:approved/delete": {
+      "guid": "b602324bfe93af1713b2fa3d2e1d6604"
+    },
+    "function:approved/dm": {
+      "guid": "4171a33f6fd5bf46c42fbcfc6f7527a5"
+    },
+    "function:approved/doc": {
+      "guid": "adcafd3be4896f771531919805a04091"
+    },
+    "function:approved/export": {
+      "guid": "2b683e5f9bf7c94f1107730ea8c382a7"
+    },
+    "function:approved/file": {
+      "guid": "8e793a3372853dfc20fb41f62db819e2"
+    },
+    "function:approved/join": {
+      "guid": "74aacc3f76b46cb8481f3c57a65d7125"
+    },
+    "function:approved/post": {
+      "guid": "1d69590876fd5cb774738e1501719726"
+    },
+    "function:approved/task": {
+      "guid": "acf415cd3290b3e5221f4ce9bd05019f"
+    },
+    "function:changes/can_follow": {
+      "guid": "4359e2fb68f010e89b7c025928e5d3f4"
+    },
+    "function:changes/read": {
+      "guid": "c785a39924e7ce700aa2c3bc361d7aa5"
+    },
+    "function:changes/record": {
+      "guid": "c6688add6ec5a6a8679b8ae3f32245fe"
+    },
+    "function:chatbot/generate_reply": {
+      "guid": "dd355b0c0de054e837cf0fbdbb7eeea8"
+    },
+    "function:conversations/create_channel": {
+      "guid": "6dfb85b977ed9ff0c4f6e2681f9ec5f7"
+    },
+    "function:conversations/details": {
+      "guid": "24d1f7518ef9a83e36802d056dd91c4e"
+    },
+    "function:conversations/list": {
+      "guid": "2bcd531792d5237600ddb9926a98b98d"
+    },
+    "function:conversations/open_dm": {
+      "guid": "627919f9ef4f439861d7eaff610ca1aa"
+    },
+    "function:conversations/open_thread": {
+      "guid": "e8195382f8d5acaa9b34b1d8b00bb260"
+    },
+    "function:conversations/people": {
+      "guid": "2485e6d8fb8ed1b4694088c96b2d6228"
+    },
+    "function:crm/add_note": {
+      "guid": "675abdd8ce001864fb060454962485e4"
+    },
+    "function:crm/apply_place": {
+      "guid": "56cb9030e126174cd08c4d72b701d200"
+    },
+    "function:crm/assign_company": {
+      "guid": "1684a6b916b39e29ac5647aa637bae61"
+    },
+    "function:crm/assign_deal": {
+      "guid": "0535816b45f2a4af2736f8eae3bd4056"
+    },
+    "function:crm/create_company": {
+      "guid": "17ee61fb8db92d247f09201b5241414a"
+    },
+    "function:crm/create_contact": {
+      "guid": "1d4c8e6cb9d6f5528a907157368953c3"
+    },
+    "function:crm/create_deal": {
+      "guid": "61b85cb39e738990b12f53d1ed3ce7ed"
+    },
+    "function:crm/create_stage": {
+      "guid": "87d970a93bdb3e783a5fbbb5da89634f"
+    },
+    "function:crm/delete_company": {
+      "guid": "64552545b05eec74503d0c78526dd078"
+    },
+    "function:crm/delete_contact": {
+      "guid": "4cd724bb82954b4790a95ec8a2e73d2f"
+    },
+    "function:crm/delete_deal": {
+      "guid": "883099c33b34a01cd0264f3c5d2b61fd"
+    },
+    "function:crm/delete_note": {
+      "guid": "274f134e0bc0597ecc1b42a0b347ad7e"
+    },
+    "function:crm/delete_stage": {
+      "guid": "67a870df92c288a1e0ee18568a0b4463"
+    },
+    "function:crm/edit_note": {
+      "guid": "7d3b3d7b8676418070f28b5c8aeb8233"
+    },
+    "function:crm/link_named": {
+      "guid": "a3cb2076ffe1744d3fe588ae75dadf0d"
+    },
+    "function:crm/list_companies": {
+      "guid": "e8c607a3b49633ccc8c70b951a9a82e2"
+    },
+    "function:crm/list_contacts": {
+      "guid": "358fe9b02e908bd2de79b90fa1bb2305"
+    },
+    "function:crm/mention_check": {
+      "guid": "075e0183dd8266b5d517199245ff58a4"
+    },
+    "function:crm/move_deal": {
+      "guid": "9312b36794d15093188e08a880b4bc65"
+    },
+    "function:crm/move_stage": {
+      "guid": "6589dc29f43f531d4353e9af94ee5321"
+    },
+    "function:crm/panels": {
+      "guid": "796737f6d17497614f64df82dbc36c18"
+    },
+    "function:crm/pipeline": {
+      "guid": "d7a1752342092e158ec218e627e66919"
+    },
+    "function:crm/place": {
+      "guid": "21732ad09769124d34fe52e9f63e3aa2"
+    },
+    "function:crm/purge": {
+      "guid": "35158e633540b7585d4a030eb8bd58a3"
+    },
+    "function:crm/purge_record": {
+      "guid": "07a4cbc3d062b3c2c15f5385da231f5c"
+    },
+    "function:crm/read_company": {
+      "guid": "3081b9f5ed7ab84a37be3f25ad2cbad7"
+    },
+    "function:crm/read_deal": {
+      "guid": "f62b4e23fab9916dd7626819ef4ea990"
+    },
+    "function:crm/release_owner": {
+      "guid": "5b66795d29407367636c96932edb11e9"
+    },
+    "function:crm/rename_stage": {
+      "guid": "88f6f48e343513200c52db8930abc467"
+    },
+    "function:crm/renumber": {
+      "guid": "e97fb9bba042d6f16be41160e4fd270e"
+    },
+    "function:crm/restore_company": {
+      "guid": "fd1824d6c457e425239787bf9a43f6dd"
+    },
+    "function:crm/restore_contact": {
+      "guid": "e54ce428f50bb22c36cf96585029d779"
+    },
+    "function:crm/restore_deal": {
+      "guid": "76abf5602d0471aa8d9a6de674cf7574"
+    },
+    "function:crm/restore_note": {
+      "guid": "d53c7e0173c8bb5912d1f9fa715dd21b"
+    },
+    "function:crm/run_context": {
+      "guid": "413f2c39cc2ecdec06d0b3f4ff20bb7a"
+    },
+    "function:crm/search": {
+      "guid": "106d05f8a4db0d9990f8e51c1d688433"
+    },
+    "function:crm/set_stage": {
+      "guid": "a4e5ce53028ed667104e54300ac86044"
+    },
+    "function:crm/setup": {
+      "guid": "26c73e02be72a713339759824f908653"
+    },
+    "function:crm/tell_named": {
+      "guid": "b0cb6a3fb1f35377b5c4958b44112105"
+    },
+    "function:crm/top_rank": {
+      "guid": "30de30bdb3a87242ebb102c6961f87a0"
+    },
+    "function:crm/update_company": {
+      "guid": "eb4a84567c922bc336838ff61e53d02a"
+    },
+    "function:crm/update_contact": {
+      "guid": "1c7123892cee9e1a322cbbdfbce1d205"
+    },
+    "function:crm/update_deal": {
+      "guid": "c50e56cf3d4fb298c2e137d168228e9f"
+    },
+    "function:docs/append": {
+      "guid": "a77ea0e3608597f4a3a2c3e3e2d26c88"
+    },
+    "function:docs/body_targets": {
+      "guid": "856b57dc3144b6d0ff1b9221bb426cd4"
+    },
+    "function:docs/changed": {
+      "guid": "db52f388fa71fd7868f038ace7832ec3"
+    },
+    "function:docs/context": {
+      "guid": "e3ca7579026ba610d1be4c614099194c"
+    },
+    "function:docs/create": {
+      "guid": "8d1df2d6cfdcae8c7aacea4efcaa89be"
+    },
+    "function:docs/create_in_space": {
+      "guid": "5a5cb21fcb77db609dab0e22eda5f645"
+    },
+    "function:docs/decide_suggestion": {
+      "guid": "6b614c71b09d75d374edb073a13023b9"
+    },
+    "function:docs/delete": {
+      "guid": "d106b6fa5e51315d20c72498234ea80a"
+    },
+    "function:docs/derive": {
+      "guid": "71b88e0eec83c80db8093405951c7564"
+    },
+    "function:docs/excerpt": {
+      "guid": "938e545df86671a9446bc5d7f528c9fa"
+    },
+    "function:docs/file_suggestion": {
+      "guid": "ae3e47139582bafe5124c30f93c27145"
+    },
+    "function:docs/for_record": {
+      "guid": "4b983b7aa10b12a9f583f7aa0d2491a6"
+    },
+    "function:docs/from_text": {
+      "guid": "158a6216f81f1312e092c0989b05b57a"
+    },
+    "function:docs/get": {
+      "guid": "c0b0733db4ef2bbba5711902b3cb51d7"
+    },
+    "function:docs/info": {
+      "guid": "d99a86a146e9ca08336b029978cc6f42"
+    },
+    "function:docs/inline_markdown": {
+      "guid": "2180393deccacf376381e8faeca27353"
+    },
+    "function:docs/list": {
+      "guid": "46f1c69ac9af951941b19ed0a32512f2"
+    },
+    "function:docs/list_in_spaces": {
+      "guid": "5e112679b54e4ae7bc6a3abb4bfa928e"
+    },
+    "function:docs/mark_editing": {
+      "guid": "eb6e1f4bd2c29afd01d3ff03241d774e"
+    },
+    "function:docs/mentioned": {
+      "guid": "bd7c10faddd2a4800761ca89a68f4edf"
+    },
+    "function:docs/pending_suggestions": {
+      "guid": "eee7e431e4b73bcbf1361b103b5b6ac9"
+    },
+    "function:docs/people": {
+      "guid": "4ac851d63c6b8436343a3e9e905781c6"
+    },
+    "function:docs/purge": {
+      "guid": "6ef23bd0d20d6d1d8376bc79e98604c7"
+    },
+    "function:docs/recently_applied": {
+      "guid": "301d87cc513b1032aeb8c8106afbfdc2"
+    },
+    "function:docs/restore": {
+      "guid": "e91d7b3e2e37a041a5f732d15fcaa6cf"
+    },
+    "function:docs/save": {
+      "guid": "0beccbffff97ce2b9630cf983a2ede76"
+    },
+    "function:docs/search": {
+      "guid": "300afa6b55bd6cbeabf6f7a8f03ac143"
+    },
+    "function:docs/set_visibility": {
+      "guid": "37e2b63332d83ff131d77c94a570d6cf"
+    },
+    "function:docs/snapshot": {
+      "guid": "fe1cd34db1d11e16e5558277f3166c66"
+    },
+    "function:docs/snippet": {
+      "guid": "106813742b0da9187f20d2dbe440cf31"
+    },
+    "function:docs/state": {
+      "guid": "addd6ce981bb5c670c09409d8ee74ef3"
+    },
+    "function:docs/sync_links": {
+      "guid": "9802d4372e1b2a361bf00a522d445cff"
+    },
+    "function:docs/tell_run": {
+      "guid": "6e3512cfc77ec6841d76b4165acae32b"
+    },
+    "function:docs/undelete": {
+      "guid": "b934ffe4a736e358282181a695338cb7"
+    },
+    "function:docs/version": {
+      "guid": "1367cfd048d6afcdebc4c66267b91eac"
+    },
+    "function:docs/versions": {
+      "guid": "e54422bcaa9095b3bce854160fec8b15"
+    },
+    "function:docs/yield": {
+      "guid": "5c0c09ee792e21815bbb93b440d5484f"
+    },
+    "function:files/attach": {
+      "guid": "49d82a398af1ee3a7596e392260a7241"
+    },
+    "function:files/attached": {
+      "guid": "15c0aed68864ddc1a3a87ea1dbfe90bd"
+    },
+    "function:files/bytes": {
+      "guid": "38141583f2daf3ffaefdc4d62d6b9ba0"
+    },
+    "function:files/can_change": {
+      "guid": "44fa0dccbc71b15a611a6dc4f9de8ec0"
+    },
+    "function:files/clean_name": {
+      "guid": "725d1a93ab581d8f2247e33d2f804a95"
+    },
+    "function:files/delete": {
+      "guid": "dbf662b1604459799fa4956b8df5dd23"
+    },
+    "function:files/keep": {
+      "guid": "4f88c4d29460bc0cb1d9b19411f74ff3"
+    },
+    "function:files/link": {
+      "guid": "894b3def2cc5e6a8795b4cf707702f5b"
+    },
+    "function:files/links": {
+      "guid": "44809c870acf23e6ec64931539dcdc63"
+    },
+    "function:files/list": {
+      "guid": "79d17241ce097dfaf03a6e591e60e3de"
+    },
+    "function:files/place": {
+      "guid": "21d5b5184df0d48e1f1604858a6e2005"
+    },
+    "function:files/purge": {
+      "guid": "a81d23897ad4b5e2c6f2c0c9c3c58880"
+    },
+    "function:files/read": {
+      "guid": "8b76f0f5935d2e33879a98f590013bd9"
+    },
+    "function:files/require_for_message": {
+      "guid": "5dea278824932f2ce31b738603cd0f58"
+    },
+    "function:files/restore": {
+      "guid": "65b4472be241010958ea155d8f491a2c"
+    },
+    "function:files/search": {
+      "guid": "1b6ab3e4221d41a2aae35d87d79e5bfd"
+    },
+    "function:files/sniff": {
+      "guid": "9596b8b98b70897fd10355c11b64498a"
+    },
+    "function:files/storage": {
+      "guid": "a45eed5b863b53003603d1bc9b4c62cf"
+    },
+    "function:files/store": {
+      "guid": "d2faa14924b7f3375dd5b34373e8b310"
+    },
+    "function:files/views": {
+      "guid": "11f42a1067fb24b81cbb0fbafc7b266b"
+    },
+    "function:inbox/clear": {
+      "guid": "b3bd53cef6d4053202f83ad3bf147cc5"
+    },
+    "function:inbox/close": {
+      "guid": "e8d50612fdbbbab83b149fa58e1b9d0f"
+    },
+    "function:inbox/count": {
+      "guid": "af85731f96da19365b5b48be62d5f3ff"
+    },
+    "function:inbox/deliver": {
+      "guid": "9d1f4dde3e8916a5ff2a4dfa9eebccd5"
+    },
+    "function:inbox/deliver_ask": {
+      "guid": "a7c967dcd740099b8fa2c4ea2f5375be"
+    },
+    "function:inbox/for_connection": {
+      "guid": "2ae021fcdf19cb8481f9c06040e00768"
+    },
+    "function:inbox/list": {
+      "guid": "74e8f65604cccf775960cd3c3fd6b2e9"
+    },
+    "function:inbox/read": {
+      "guid": "358b87c3875fcb1ce550c9bae03438de"
+    },
+    "function:inbox/read_all": {
+      "guid": "5abd51e2b3fd9c852c36894653ba2c2f"
+    },
+    "function:inbox/read_record": {
+      "guid": "8d6b2b9608663c5b7f412e5de7072699"
+    },
+    "function:inbox/read_through": {
+      "guid": "197f6192f6b8d1a720f6d69741e7d442"
+    },
+    "function:inbox/settle_group": {
+      "guid": "d135032e8521b2bb929108c4c45011c0"
+    },
+    "function:links/add_body": {
+      "guid": "ad7f5882f7a4298a13544b3f99c016e7"
+    },
+    "function:links/create": {
+      "guid": "beed6d5d8431927603a008b672f83eb4"
+    },
+    "function:links/forget": {
+      "guid": "2ce8ada1f82765b43935cb78b28dc9b6"
+    },
+    "function:links/list": {
+      "guid": "0ee03d218b9a12dba5672a1d6aa9d272"
+    },
+    "function:links/locate": {
+      "guid": "4a4c7c35d59ea4ff4479b2b9080ad7d9"
+    },
+    "function:links/mention_check": {
+      "guid": "a4cb75b181c0bc4618ff8441ded94b49"
+    },
+    "function:links/reconcile": {
+      "guid": "5a3c617e44da9bb27c9260c3d3c95471"
+    },
+    "function:links/remove": {
+      "guid": "821759e085c0f9da160b7403ddd52dbe"
+    },
+    "function:links/resolve": {
+      "guid": "1f1b4df74a9c723799f1eec6339569d2"
+    },
+    "function:links/state": {
+      "guid": "1656f08f2bbfb4ebf80d5c5f7e16eda1"
+    },
+    "function:members/clear_demo": {
+      "guid": "45b0edeb2b6de149a27162bbe105ed43"
+    },
+    "function:members/demo_counts": {
+      "guid": "3acc5095dd7ae63a9b70ce1f840c3c0d"
+    },
+    "function:members/end_demo": {
+      "guid": "5073fa702f1f86425232c57bb4b06cd0"
+    },
+    "function:members/remove": {
+      "guid": "42a87c4fb6145a4db42483d689d7cc0e"
+    },
+    "function:messages/advance_read": {
+      "guid": "833b88bbecdd5c2948485d40c4e69d50"
+    },
+    "function:messages/count_reply": {
+      "guid": "a54c3ea3af9fb424f72bf09dedbe9a5d"
+    },
+    "function:messages/delete": {
+      "guid": "a2fa7c1a4e8fd1eb83d0ba5b2b38cee4"
+    },
+    "function:messages/edit": {
+      "guid": "26d26ba28301d9adbf14707447e786c1"
+    },
+    "function:messages/hint": {
+      "guid": "239a9efc3b9c69ab87639694487eacfc"
+    },
+    "function:messages/history": {
+      "guid": "0e0985acb095de6d00919003ebe11116"
+    },
+    "function:messages/post": {
+      "guid": "e2e563819880bf13a316e0187fe82a31"
+    },
+    "function:messages/read": {
+      "guid": "7ea5ed4d66197ed7b63d16e2171d060a"
+    },
+    "function:messages/release_held": {
+      "guid": "9ccd0ebe18afbb74df3a5e753d9bda73"
+    },
+    "function:messages/tell": {
+      "guid": "7c86b55d730dd7378f9474b3cb2c289a"
+    },
+    "function:messages/tokens": {
+      "guid": "db1454f8f65a43f439c770c17b2ad4cc"
+    },
+    "function:overview/read": {
+      "guid": "3d3b41a0457b27ccf929e79f10ed1142"
+    },
+    "function:rbac/permissions": {
+      "guid": "72dad0994c746b4ea289c8ca81718074"
+    },
+    "function:rbac/set_role": {
+      "guid": "6409af4a083aa634acf5d9928cecbb2b"
+    },
+    "function:search/find": {
+      "guid": "74b768285496db47adb8fc7bfaa9d1aa"
+    },
+    "function:search/index": {
+      "guid": "03e278f95c28891a76130a9cfba33106"
+    },
+    "function:search/scopes": {
+      "guid": "5e6ae209fb4af3469e576920df15883d"
+    },
+    "function:setup/run": {
+      "guid": "51e982c082044b1eb107e9bb95018458"
+    },
+    "function:spaces/add_member": {
+      "guid": "3026b2ce6ca957b7018d8d8cae62f0a5"
+    },
+    "function:spaces/create": {
+      "guid": "abd204f97e99a50587c8076c6bea0a52"
+    },
+    "function:spaces/join": {
+      "guid": "5b5e4b375f491f79c2049059899dfc7a"
+    },
+    "function:spaces/remove_member": {
+      "guid": "03200162a88aa66be3700c5874141da3"
+    },
+    "function:spaces/set_role": {
+      "guid": "366a3b16e700a877f6bd887ae55dcccc"
+    },
+    "function:spaces/update": {
+      "guid": "180b99a8628f02e03b8dbfecbbb939eb"
+    },
+    "function:tasks/apply_place": {
+      "guid": "8257889e90ea337ff88361cdd88226ec"
+    },
+    "function:tasks/assign": {
+      "guid": "b684efc4328f89b1af084ff3fe3381f6"
+    },
+    "function:tasks/clean_due": {
+      "guid": "bc41d89e6d66091063bca44cd4f07649"
+    },
+    "function:tasks/create": {
+      "guid": "a6bc679a3eb51ff0c50fc5fdda650fd5"
+    },
+    "function:tasks/create_project": {
+      "guid": "4b55a607a89d0943b9418aa86f075190"
+    },
+    "function:tasks/delete": {
+      "guid": "56f1c1618e780d2d458f6fca7482faef"
+    },
+    "function:tasks/delete_view": {
+      "guid": "4905a8baba8fb0effa71d0ad8ff91816"
+    },
+    "function:tasks/insert": {
+      "guid": "f79ad529d5b22020b7923d6ce58e1319"
+    },
+    "function:tasks/list": {
+      "guid": "4c78f84e42c0ea4d744c20922fc903f9"
+    },
+    "function:tasks/move": {
+      "guid": "1134e63603b201e26e1cf7c1cb8b3dd3"
+    },
+    "function:tasks/place": {
+      "guid": "042d269e7002c7876d01e13929321ca7"
+    },
+    "function:tasks/purge": {
+      "guid": "9fec64c987c7cab47f5f624d47e61e6e"
+    },
+    "function:tasks/read": {
+      "guid": "2f153320343f6dcb54f2d520f5bdb7db"
+    },
+    "function:tasks/renumber": {
+      "guid": "241e286864ef5be4f341296486c35bfa"
+    },
+    "function:tasks/restore": {
+      "guid": "b6c6b51b978dff8d6fd505b5c6c0de80"
+    },
+    "function:tasks/revise": {
+      "guid": "2ee440acff1de40cacbcec4472a8c80e"
+    },
+    "function:tasks/save_view": {
+      "guid": "13a0a2239aa21870b616eaf7888b918c"
+    },
+    "function:tasks/search": {
+      "guid": "e3a93bf4b980227f3c9cf9164d1a2d42"
+    },
+    "function:tasks/set_due": {
+      "guid": "75dbb63d1015418294f3f3feaf278896"
+    },
+    "function:tasks/set_priority": {
+      "guid": "e4190e1cf582f2f9e39de4336d03be4a"
+    },
+    "function:tasks/set_status": {
+      "guid": "8172dde5be8760f83fb1acbe732523e2"
+    },
+    "function:tasks/setup": {
+      "guid": "8f292d181281aee81013bb1d8a572c61"
+    },
+    "function:tasks/tell_added": {
+      "guid": "c215c8954f0d414bbee2a07a51d88082"
+    },
+    "function:tasks/tell_mentions": {
+      "guid": "2119f08cd1e0ea9776f5def63b5a5fe9"
+    },
+    "function:tasks/top_rank": {
+      "guid": "41ab4bfc7618dfde4e97e96ca975a11e"
+    },
+    "function:tasks/unassign_leaver": {
+      "guid": "11079a4c36946243d261e57199a81091"
+    },
+    "function:tasks/update": {
+      "guid": "685660d57edb9724222c8ec157351bf0"
+    },
+    "function:tasks/update_project": {
+      "guid": "78a0366a08a6dbedf13c93d6dec5a807"
+    },
+    "message:live|typing/{conversation_id}|typing": {
+      "guid": "afff48797d9071d58294031306e29755"
+    },
+    "middleware:agents/note_client": {
+      "guid": "0e49a65491d4d58b4ce1a14dfd52d2ec"
+    },
+    "middleware:docs/after_write": {
+      "guid": "64c9a152b99c362b7cf2d04578cf0a5a"
+    },
+    "middleware:docs/gate_write": {
+      "guid": "2a4a91d08aff7f8aeaf97fc1bc681a8f"
+    },
+    "middleware:inbox/after_decision": {
+      "guid": "cf5bf38752186f88c8934cb97cc4970e"
+    },
+    "middleware:members/gate_active": {
+      "guid": "1ece908978a161571441ca5d3364a3a3"
+    },
+    "middleware:members/gate_not_guest": {
+      "guid": "b5c6ecdd1d922f1785455eb064a04d2c"
+    },
+    "query:Authentication|GET|auth/demo/personas": {
+      "guid": "b83e7c6953156d71f59acffa05dc79d2"
+    },
+    "query:Authentication|GET|auth/invites": {
+      "guid": "1009cee1fcfd5f1fb8899807398f6665"
+    },
+    "query:Authentication|GET|auth/me": {
+      "guid": "8e64176a70b122ffed0ce68ceed6b9ce",
+      "guid_source": "code"
+    },
+    "query:Authentication|GET|auth/status": {
+      "guid": "7c5689070601fc7f9cd11890b0fa1ef2"
+    },
+    "query:Authentication|PATCH|auth/me": {
+      "guid": "e07bb43e93fb31e03505b6200a89df24"
+    },
+    "query:Authentication|POST|auth/demo": {
+      "guid": "57d4713073de44a5850be77ca2037d16"
+    },
+    "query:Authentication|POST|auth/invites": {
+      "guid": "200f98a8cc06cb814b3be6372e8a4cb1"
+    },
+    "query:Authentication|POST|auth/invites/{id}/revoke": {
+      "guid": "88465458bb33b13e92c39221ebe9dd71"
+    },
+    "query:Authentication|POST|auth/link": {
+      "guid": "73a0ac4e597dd8af5527efd6fea738a5"
+    },
+    "query:Authentication|POST|auth/link/accept": {
+      "guid": "edcdf8905fda0a855258976733594e61"
+    },
+    "query:Authentication|POST|auth/login": {
+      "guid": "35b7bbd1552626fbc8b7b6c1115c70df",
+      "guid_source": "code"
+    },
+    "query:Authentication|POST|auth/me/password": {
+      "guid": "8e9e49eec9d4d6a886c5c90202fc9009"
+    },
+    "query:Authentication|POST|auth/people/{id}/reset-link": {
+      "guid": "553340983f0c224529b93de4c94a1c2d"
+    },
+    "query:Authentication|POST|auth/setup": {
+      "guid": "d1af09dd08e536a65a65637d9d46d0ee"
+    },
+    "query:Authentication|POST|auth/signup": {
+      "guid": "ad508f9d25b77a54e415db5c45d0d8d0",
+      "guid_source": "code"
+    },
+    "query:Chatbot|DELETE|chat/conversations/{conversation_id}": {
+      "guid": "7c36dd95cd835b1e074c13e88dfb366f"
+    },
+    "query:Chatbot|GET|chat/conversations": {
+      "guid": "462d80d3951173d82fd6af65d2d66226"
+    },
+    "query:Chatbot|GET|chat/conversations/{conversation_id}/messages": {
+      "guid": "3b6c9a03e5e4d27ed093c48d631012f3"
+    },
+    "query:Chatbot|POST|chat/conversations/create": {
+      "guid": "07552b101f5c7504c601f071300e1d96"
+    },
+    "query:Chatbot|POST|chat/conversations/{conversation_id}/send": {
+      "guid": "6a62546cc13071290f173fe1a1bcd5e4"
+    },
+    "query:MCP OAuth|GET|mcp_oauth/login": {
+      "guid": "aecd78c1c9daacdbd415ade01e6fd77f"
+    },
+    "query:MCP OAuth|GET|mcp_oauth/request": {
+      "guid": "2e2afa6bf73758db462243703f5c49b8"
+    },
+    "query:MCP OAuth|POST|mcp_oauth/complete": {
+      "guid": "c73632038f52023bd3e4c802e46f3967"
+    },
+    "query:MCP OAuth|POST|mcp_oauth/sign_in": {
+      "guid": "95965a156cc0e36b35e016145ebb75fe"
+    },
+    "query:agent-loop|POST|agent-runs/execute": {
+      "guid": "17afccf204cf8978889213b1c0d2651d"
+    },
+    "query:agents|GET|agent-approvals": {
+      "guid": "cc3e16ed5fd0ef5179614c2ba24e8f24"
+    },
+    "query:agents|GET|agent-approvals/{id}": {
+      "guid": "9eca7e590df9b46bdc97494d8e741307"
+    },
+    "query:agents|GET|agent-pickups": {
+      "guid": "e909f16d99b004df1d70854f010633cc"
+    },
+    "query:agents|GET|agent-runs": {
+      "guid": "02369828c57b86915cfbd3b49afd99ce"
+    },
+    "query:agents|GET|agent-runs/{id}/steps": {
+      "guid": "0cf96e4f63b56e5155d1c92dae7524f5"
+    },
+    "query:agents|GET|agent-sponsors": {
+      "guid": "ecfdb1235958b1eded7b18cc6496e117"
+    },
+    "query:agents|GET|agents/connected": {
+      "guid": "c868a0409c28572c85823beec36312e5"
+    },
+    "query:agents|GET|agents/hosted": {
+      "guid": "6e308349cba2575b41576d21503c4a6e"
+    },
+    "query:agents|GET|agents/{agent_id}/keys": {
+      "guid": "10aa06ecf51519b2ca559e858290b13f"
+    },
+    "query:agents|GET|approvals-overseen": {
+      "guid": "b7e25a5a9df6b8ebf9058a887e431272"
+    },
+    "query:agents|GET|team-agents/{agent_id}": {
+      "guid": "1f54242d3d21d9913c9d06b6b51df9ec"
+    },
+    "query:agents|GET|team-agents/{agent_id}/runs": {
+      "guid": "5dea352311fa8585ae336a6a81ce0c9c"
+    },
+    "query:agents|PATCH|team-agents/{agent_id}": {
+      "guid": "abb64af928a2ee453b903711d073059f"
+    },
+    "query:agents|POST|agent-mention-check": {
+      "guid": "92f47f7b004bc74160e5587539f9d2bb"
+    },
+    "query:agents|POST|agent-runs/{id}/retry": {
+      "guid": "ffaee90f72b4fdf68cf2a9b801068b92"
+    },
+    "query:agents|POST|agent-runs/{id}/stop": {
+      "guid": "6150f6681f8ed66ed27de101e4110fff"
+    },
+    "query:agents|POST|agents/pause": {
+      "guid": "efc43a97ab2adf68959a23c2d94c45e6"
+    },
+    "query:agents|POST|agents/{agent_id}/keys": {
+      "guid": "2f2607e4c50e8d56d8f8a78fd6ba77b6"
+    },
+    "query:agents|POST|agents/{agent_id}/keys/{key_id}/revoke": {
+      "guid": "b292be5b2a1b556341960e36201cc0fb"
+    },
+    "query:agents|POST|agents/{agent_id}/keys/{key_id}/rotate": {
+      "guid": "0ccc8e862f691550b7cdb8b201405e29"
+    },
+    "query:agents|POST|team-agents": {
+      "guid": "aab9b3fee2fcef3038a34f638d051633"
+    },
+    "query:agents|POST|team-agents/{agent_id}/revive": {
+      "guid": "16c418396861228c30327e6f69b00809"
+    },
+    "query:agents|POST|team-agents/{agent_id}/sponsor": {
+      "guid": "768e81f009c15b2b6c0089aa220dc9cc"
+    },
+    "query:agents|PUT|team-agents/{agent_id}/spaces": {
+      "guid": "af5abd07374346a76516b8a00a1606b6"
+    },
+    "query:agent|GET|agent/activity": {
+      "guid": "9a8e1604eb608d23d1830387749c9fe5"
+    },
+    "query:agent|GET|agent/connections": {
+      "guid": "b9c7bc064f0710a08e0874fb29a61e12"
+    },
+    "query:agent|GET|agent/info": {
+      "guid": "bc0adfcd34661f63a9e872cf5d198d84"
+    },
+    "query:agent|POST|agent/connections": {
+      "guid": "867a0a082e530f2e65e108c2470f1bfd"
+    },
+    "query:agent|POST|agent/connections/{id}/revoke": {
+      "guid": "77323117ebfbe57ce8655ae586ab5693"
+    },
+    "query:approvals|GET|approvals": {
+      "guid": "fd589bb359d6f89f15bc9267c1c0a127"
+    },
+    "query:approvals|POST|approvals/{id}/approve": {
+      "guid": "c73e10362e162138c316ebb3ead5ed99"
+    },
+    "query:approvals|POST|approvals/{id}/decline": {
+      "guid": "3e77b035a152ba08663b226305ecf0dd"
+    },
+    "query:app|GET|app/activity": {
+      "guid": "0e39ee592793d3bb4db8ac37d8384f32"
+    },
+    "query:app|GET|app/notifications": {
+      "guid": "e842bbc5ba048bfdd0d380ca588ae653"
+    },
+    "query:app|GET|app/notifications/unread": {
+      "guid": "fa022888475637435c6f3b6932cc2e78"
+    },
+    "query:app|GET|app/people": {
+      "guid": "625b976644075dd90ecfc1e334d2f6b3"
+    },
+    "query:app|GET|app/settings": {
+      "guid": "b9809e38250fbfa90155bc604eb2db63"
+    },
+    "query:app|PATCH|app/settings": {
+      "guid": "29068de8520304ab536a922150685605"
+    },
+    "query:app|POST|app/notifications/read-all": {
+      "guid": "74c0c7d2364fb765f170d1b56f0f4336"
+    },
+    "query:app|POST|app/notifications/{id}/done": {
+      "guid": "ea592ae0e859fb43dd4f702644128f2d"
+    },
+    "query:app|POST|app/notifications/{id}/read": {
+      "guid": "6893f09eb5bc2a69aed3c29019611582"
+    },
+    "query:changes|GET|changes": {
+      "guid": "501355c8acb1f9e715e38887b7c8c2e9"
+    },
+    "query:crm|DELETE|companies/{id}": {
+      "guid": "5615c7980d1d9788b1ae722e2663b201"
+    },
+    "query:crm|DELETE|contacts/{id}": {
+      "guid": "22b72beaf07b8133b5b8bff72a4687f5"
+    },
+    "query:crm|DELETE|crm-notes/{id}": {
+      "guid": "b7d5657e6b4efbd0c484a5aa84a43d17"
+    },
+    "query:crm|DELETE|deals/{id}": {
+      "guid": "d25a9de273cf6225623a0eca7c71fefb"
+    },
+    "query:crm|DELETE|stages/{id}": {
+      "guid": "0bb1f2d82ebb65885aac9b043c5bdac1"
+    },
+    "query:crm|GET|companies": {
+      "guid": "baccc2a3e4e41ee5da834ba61c0b2398"
+    },
+    "query:crm|GET|companies/{id}": {
+      "guid": "006f383a799a46df378f4c656d1b0fc3"
+    },
+    "query:crm|GET|companies/{id}/panels": {
+      "guid": "404f28253c16f0568939768dbd566951"
+    },
+    "query:crm|GET|contacts": {
+      "guid": "fa2ca8242e54b99ad787996fdc621be0"
+    },
+    "query:crm|GET|crm-search": {
+      "guid": "8d26472c24b834938119f422709f6191"
+    },
+    "query:crm|GET|crm-setup": {
+      "guid": "6050f9322595325b54ea64d105ee4470"
+    },
+    "query:crm|GET|deals/{id}": {
+      "guid": "7cc29f890b6f266427ae2c4150e4e0b2"
+    },
+    "query:crm|GET|pipeline": {
+      "guid": "9eaf0386e2a7ad6c5397941dfafccfc0"
+    },
+    "query:crm|PATCH|companies/{id}": {
+      "guid": "88bed8eba6056f24c8a1092a8a793d85"
+    },
+    "query:crm|PATCH|contacts/{id}": {
+      "guid": "1a891b21de1dd737a29af01a0c293fb7"
+    },
+    "query:crm|PATCH|crm-notes/{id}": {
+      "guid": "f2a1f252cb647b9640804cd23afb5c0a"
+    },
+    "query:crm|PATCH|deals/{id}": {
+      "guid": "2dc0892ac696645e25200d17b151ce68"
+    },
+    "query:crm|PATCH|stages/{id}": {
+      "guid": "fa9fe3231b16f975460c53782c0355a6"
+    },
+    "query:crm|POST|companies": {
+      "guid": "1781c7c858d6c2fe0750019232445279"
+    },
+    "query:crm|POST|companies/{id}/owner": {
+      "guid": "87c7bb77e6ab7df66f021af548dfdb11"
+    },
+    "query:crm|POST|companies/{id}/restore": {
+      "guid": "fb764b113bdf1db8a821a00e5a5fc30c"
+    },
+    "query:crm|POST|contacts": {
+      "guid": "4cce0ffe3c8ded7854184f89b808d682"
+    },
+    "query:crm|POST|contacts/{id}/restore": {
+      "guid": "a7be8860da45b1f6c14b4a57f2a4c9ff"
+    },
+    "query:crm|POST|crm-mention-check": {
+      "guid": "8815b8cd8b95c37f87871e778c7618be"
+    },
+    "query:crm|POST|crm-notes": {
+      "guid": "9ac71df38348b6011bcea9ca2ca7b4e2"
+    },
+    "query:crm|POST|crm-notes/{id}/restore": {
+      "guid": "e39235cdccd4f592af273f6147d57303"
+    },
+    "query:crm|POST|crm-read": {
+      "guid": "5ec7c8a36c28de4acb1eba54e8a3dea3"
+    },
+    "query:crm|POST|deals": {
+      "guid": "50ea20b9b0344c7c7a474fc202dc5233"
+    },
+    "query:crm|POST|deals/{id}/move": {
+      "guid": "e94629409604d83549b93e4ffbf9a5cc"
+    },
+    "query:crm|POST|deals/{id}/owner": {
+      "guid": "6dc0c95eb663f69654952304f0df0d74"
+    },
+    "query:crm|POST|deals/{id}/restore": {
+      "guid": "89c63e4b50880491891eb4ac57ce45ed"
+    },
+    "query:crm|POST|deals/{id}/stage": {
+      "guid": "1ba487dcd05516b2c18acf1be290c7b3"
+    },
+    "query:crm|POST|stages": {
+      "guid": "ae82c51e9f83b2f1d2dfb1a1fbb0e990"
+    },
+    "query:crm|POST|stages/{id}/move": {
+      "guid": "4ba431f4625fc8897ab124c0bb4b248a"
+    },
+    "query:doc-tools|GET|doc-context/{id}": {
+      "guid": "f92dd2408415377e5398a6e07da5726f"
+    },
+    "query:doc-tools|GET|doc-list": {
+      "guid": "daee90e1108b837328b00e5d64d29f56"
+    },
+    "query:doc-tools|GET|doc-search": {
+      "guid": "e26b75625620686f5ac03fb5b9ab3da2"
+    },
+    "query:doc-tools|POST|doc-create": {
+      "guid": "08f6ad8ca24e05ce742292c851c8104e"
+    },
+    "query:doc-tools|POST|doc-editing/{id}": {
+      "guid": "f4b124f82b1cfec677ffd92d26d2c1ec"
+    },
+    "query:doc-tools|POST|doc-read/{id}": {
+      "guid": "82c359835c1ff468854b8499d16f2fa9"
+    },
+    "query:doc-tools|POST|doc-suggestions/{id}/decide": {
+      "guid": "1ad53c7cbba1972bea930aba822cc69b"
+    },
+    "query:doc-tools|POST|doc-yield/{id}": {
+      "guid": "0c565337ece89c78fc04c167582bf19f"
+    },
+    "query:docs|DELETE|docs/{id}": {
+      "guid": "1d86ab6671c62802f15ac92b4301f935"
+    },
+    "query:docs|GET|docs/info": {
+      "guid": "54dd8e0df4d75b59ddb9ba1b91638414"
+    },
+    "query:docs|GET|docs/{id}": {
+      "guid": "e2eef82d4de7e84622a6c663b3ad2c27"
+    },
+    "query:docs|GET|docs/{id}/versions": {
+      "guid": "80c5f8154cbf282f5b8ff5588e54db91"
+    },
+    "query:docs|GET|docs/{id}/versions/{version_id}": {
+      "guid": "9c404bf281102b556b39f3800cd2700e"
+    },
+    "query:docs|POST|docs/{id}/restore": {
+      "guid": "bf6142c66772b539a743d4f778328dd9"
+    },
+    "query:docs|POST|docs/{id}/save": {
+      "guid": "904f82b965746f4cac0fa3b47939defe"
+    },
+    "query:docs|POST|docs/{id}/undelete": {
+      "guid": "7d5a881135da99ba5156961ed1bac1c3"
+    },
+    "query:docs|POST|docs/{id}/versions": {
+      "guid": "127b7e8280f42cdb30fc9d8510714858"
+    },
+    "query:files|DELETE|files/{id}": {
+      "guid": "694ac593ed00078c0ae1eeaad1ce366f"
+    },
+    "query:files|GET|file-attachments": {
+      "guid": "d9e458f971d9b99602eb7065dea3a5b0"
+    },
+    "query:files|GET|file-search": {
+      "guid": "afd04f02d18cffd2fc8cacd81474aad9"
+    },
+    "query:files|GET|file-storage": {
+      "guid": "3885c98d244b68d428bfc5673707ea95"
+    },
+    "query:files|GET|files": {
+      "guid": "0bfced1a3cb624658ae9c0f64b9b49d4"
+    },
+    "query:files|GET|files/{id}": {
+      "guid": "b569c0fc649831c0869bd7ab98fb1cd6"
+    },
+    "query:files|GET|files/{id}/link": {
+      "guid": "2a4bbe490e60d7c8b4d0ff37d46303d7"
+    },
+    "query:files|GET|files/{id}/links": {
+      "guid": "a01f66f9029a57e6d176d7e93c5143d3"
+    },
+    "query:files|GET|files/{id}/raw": {
+      "guid": "c210e1cddd63301b78c70a5e9c2042d9"
+    },
+    "query:files|POST|file-views": {
+      "guid": "c02bda6c6ac946d3b67da657371c1401"
+    },
+    "query:files|POST|files": {
+      "guid": "0320aabec8a371eed4ba31ee5e0b139d"
+    },
+    "query:files|POST|files/{id}/restore": {
+      "guid": "77ba2bbeca7b00dcbd2c597b307e9252"
+    },
+    "query:links|DELETE|links/{id}": {
+      "guid": "d2e3f933115b39f79e7cf82f2a55e69e"
+    },
+    "query:links|GET|links": {
+      "guid": "8b590ced2f43577be98f3633cf7ace95"
+    },
+    "query:links|POST|links": {
+      "guid": "29d4a1fa3f3d2508174f17a9ac33d08b"
+    },
+    "query:links|POST|links/mention-check": {
+      "guid": "866dad1ddbb8f7eaae24cd476bfa3811"
+    },
+    "query:links|POST|links/resolve": {
+      "guid": "82189ea509f2aa7ad5003e21fd81f266"
+    },
+    "query:members|GET|members/clear-demo": {
+      "guid": "56df19a6abe288d78ef5f9f1c008a35b"
+    },
+    "query:members|GET|members/end-demo": {
+      "guid": "37769fd673204f68ebf5bf0f45c75b7b"
+    },
+    "query:members|GET|members/{id}/offboarding": {
+      "guid": "704708cad20c8412d0ad67f70c05047b"
+    },
+    "query:members|POST|members/clear-demo": {
+      "guid": "6bbcb38cc98fdfd7a5f33604e7ffe22f"
+    },
+    "query:members|POST|members/end-demo": {
+      "guid": "4ba37817a280ddb9f2e861f5ca60ec05"
+    },
+    "query:members|POST|members/{id}/remove": {
+      "guid": "308ca02d82d46f66686822ffedd08678"
+    },
+    "query:messaging|DELETE|messages/{id}": {
+      "guid": "5588c2613f78147f567d81349ff3971d"
+    },
+    "query:messaging|GET|conversations/{id}/details": {
+      "guid": "ae34573e80dd14c510f88782245d2ff2"
+    },
+    "query:messaging|GET|conversations/{id}/messages": {
+      "guid": "2bee8bf5d8587b193808d1cc225284d3"
+    },
+    "query:messaging|GET|conversations/{id}/people": {
+      "guid": "743f729d6ffdbbf170d5173e07792a38"
+    },
+    "query:messaging|PATCH|messages/{id}": {
+      "guid": "7fc79cc009aff0977b57d794e2be6a04"
+    },
+    "query:messaging|POST|conversations/dm": {
+      "guid": "4de87bac65da1af38a6911ae4403d383"
+    },
+    "query:messaging|POST|conversations/{id}/messages": {
+      "guid": "3e16f3bdb3a5803e7362a052cdade8bc"
+    },
+    "query:messaging|POST|conversations/{id}/read": {
+      "guid": "0b0b0cfb3814fae7732803590b3deb5f"
+    },
+    "query:messaging|POST|spaces/{id}/channels": {
+      "guid": "acf859716cc4a949cb22cd219e5cbe87"
+    },
+    "query:messaging|POST|threads": {
+      "guid": "cc9b82fd618fc398cd86fbf8bf988d94"
+    },
+    "query:rbac|GET|rbac/changes": {
+      "guid": "7089569b87fb73f3a57cd67a9c3d2625"
+    },
+    "query:rbac|GET|rbac/me": {
+      "guid": "5e438831b483a6067cfb5e8754543144"
+    },
+    "query:rbac|GET|rbac/members": {
+      "guid": "4a1904ed6c32f9c1a500f4ab875f8c04"
+    },
+    "query:rbac|POST|rbac/members/{id}/role": {
+      "guid": "5eda75ffcd0a58d4d355408111332420"
+    },
+    "query:search|GET|overview": {
+      "guid": "bdea58680b5f1774cdae0d135113ceca"
+    },
+    "query:search|GET|search": {
+      "guid": "0099dc4b4369290caa0393d9ea709938"
+    },
+    "query:spaces|GET|conversations": {
+      "guid": "0a1950c9dc376f67d37a230ce6a0c328"
+    },
+    "query:spaces|GET|conversations/{id}": {
+      "guid": "16f2c2113bc6b9ce888cd8b818fa2a8a"
+    },
+    "query:spaces|GET|spaces": {
+      "guid": "2ba1afbba19e10b01c7368cd14fa66b7"
+    },
+    "query:spaces|GET|spaces/{id}": {
+      "guid": "23de56cdcd4dea4b08fa6248452f6b15"
+    },
+    "query:spaces|GET|spaces/{id}/members": {
+      "guid": "c844ab194a53a62752b6b50dcdb1c9d4"
+    },
+    "query:spaces|PATCH|spaces/{id}": {
+      "guid": "1e60374a2a292f9c3d1f97f0f5669a51"
+    },
+    "query:spaces|PATCH|spaces/{id}/members/{user_id}": {
+      "guid": "8fc5e971623d4865cd97243e1501bb8f"
+    },
+    "query:spaces|POST|spaces": {
+      "guid": "4d52de8ec04eb5941f5e3779d5e36170"
+    },
+    "query:spaces|POST|spaces/{id}/join": {
+      "guid": "6f6e5e6cfabb2b7e6d0d0bbf2ad05883"
+    },
+    "query:spaces|POST|spaces/{id}/members": {
+      "guid": "546da49556f19226e29f612c1713b87a"
+    },
+    "query:spaces|POST|spaces/{id}/members/{user_id}/remove": {
+      "guid": "9fa810ada220fa4c7f4efea9e52b87b4"
+    },
+    "query:tasks|DELETE|task-views/{id}": {
+      "guid": "5cb4dc9cd0097b59f9385d5ee0b88f59"
+    },
+    "query:tasks|DELETE|tasks/{id}": {
+      "guid": "3c8e00ee095b179305d6094b4f532734"
+    },
+    "query:tasks|GET|task-search": {
+      "guid": "9fec6f1e35d1146d3d65476110a2bca1"
+    },
+    "query:tasks|GET|task-setup": {
+      "guid": "3ebeff007eaee429a2750f745ba12568"
+    },
+    "query:tasks|GET|tasks": {
+      "guid": "c988715676a5bf9b1c18b261b858e5e1"
+    },
+    "query:tasks|GET|tasks/{id}": {
+      "guid": "7473c76773035f03011b4428ac1b2dab"
+    },
+    "query:tasks|PATCH|projects/{id}": {
+      "guid": "c837d10b9c9cd1afd1648c9fe824fead"
+    },
+    "query:tasks|PATCH|tasks/{id}": {
+      "guid": "5eeb93380b9f62a25aca101680568cbb"
+    },
+    "query:tasks|POST|projects": {
+      "guid": "070528fb6e0420b27cc100c788c71d3f"
+    },
+    "query:tasks|POST|task-views": {
+      "guid": "8fe24d4e76a4b9db1d303a5fc1728de1"
+    },
+    "query:tasks|POST|tasks": {
+      "guid": "c9b405228628ecd9b698928793de3dfa"
+    },
+    "query:tasks|POST|tasks/{id}/assign": {
+      "guid": "3a7448e22280ec2411fe8cfc71282b6d"
+    },
+    "query:tasks|POST|tasks/{id}/due": {
+      "guid": "c9d2eb8d4fa421a9c940ba63f7ea0710"
+    },
+    "query:tasks|POST|tasks/{id}/move": {
+      "guid": "5c32bf2343c030615a1188bc6fc7dded"
+    },
+    "query:tasks|POST|tasks/{id}/priority": {
+      "guid": "41b6f4a933226f3d5a4a9c32025d5068"
+    },
+    "query:tasks|POST|tasks/{id}/read": {
+      "guid": "7eabe9118da2f4034c056df37a3b334a"
+    },
+    "query:tasks|POST|tasks/{id}/restore": {
+      "guid": "da165a819b94f01915ca296932efe186"
+    },
+    "query:tasks|POST|tasks/{id}/status": {
+      "guid": "d186c0959e7596929a932de4e27c7e72"
+    },
+    "realtime_server:live": {
+      "guid": "5d1e4e55d5ae5c2dab1639895bf8abef",
+      "canonical": "live",
+      "canonical_source": "code"
+    },
+    "task:agents/sweep_every_hour": {
+      "guid": "183622cbb61959a77eb62a3fa3a5752a"
+    },
+    "task:agents/sweep_every_minute": {
+      "guid": "f59b099d10bc1a180e0ff5f97e181c17"
+    },
+    "task:crm_purge_daily": {
+      "guid": "2ec17c2199e16f916dfb5635d8a06e4e"
+    },
+    "task:docs_purge_daily": {
+      "guid": "96dc01f64986b3f8e46dfd995e63e895"
+    },
+    "task:files_purge_daily": {
+      "guid": "0e43560703df7ce20bed87b0c00fb858"
+    },
+    "task:tasks_purge_daily": {
+      "guid": "ce79018e1acac98d73124d7e40f44131"
+    },
+    "tool:check_approval": {
+      "guid": "e4c87b30ec8a77fd509a5629861f8879"
+    },
+    "tool:check_approval_signin": {
+      "guid": "39658920a99a071bd8f912ca653abfc6"
+    },
+    "tool:check_my_approval": {
+      "guid": "29a385ed242c53d469ebc4ff1f80b0d2"
+    },
+    "tool:my_inbox": {
+      "guid": "59b380425db795a59bbde3231e629ac6"
+    },
+    "tool:my_inbox_signin": {
+      "guid": "447c929f7ddd041f832c6ae7c758d5e9"
+    },
+    "tool:post_message": {
+      "guid": "4c53deb6e7b90e0bd403f7ae8ab10043"
+    },
+    "tool:post_message_signin": {
+      "guid": "533586e1180b1b5acf5747acd7e828eb"
+    },
+    "tool:read_record": {
+      "guid": "0e8412f2bedc9cc2f68ac697fbf20c5c"
+    },
+    "tool:read_record_signin": {
+      "guid": "e211d2d91a1f72013f0be2a48137f25c"
+    },
+    "tool:recent_activity": {
+      "guid": "b9b5b034a829491549a68e02ef0b2380"
+    },
+    "tool:report_progress": {
+      "guid": "e0f538ab06f383b90e45c8ff2fd20077"
+    },
+    "tool:report_progress_signin": {
+      "guid": "21f876babba809f48a88d6d75a39b814"
+    },
+    "tool:request_action": {
+      "guid": "df9223e6a8129edccbec5402b2bf463a"
+    },
+    "tool:request_action_signin": {
+      "guid": "e40e46bef12d598f06b63f21502472b2"
+    },
+    "tool:save_crm_record": {
+      "guid": "01df4beb3dd9d80257992cb421b5ff08"
+    },
+    "tool:save_crm_record_signin": {
+      "guid": "be10e249971c892d0345b106e04cc267"
+    },
+    "tool:save_doc": {
+      "guid": "d1e9b0004240b338f63898c9d616f210"
+    },
+    "tool:save_doc_signin": {
+      "guid": "27d4c97215f1e05846ad1427d91d8308"
+    },
+    "tool:save_file": {
+      "guid": "d2eb6d183394d769244b209fdccbb2aa"
+    },
+    "tool:save_file_signin": {
+      "guid": "23eb33d51207f82ea0c0eb4a82af9a7c"
+    },
+    "tool:save_task": {
+      "guid": "e219f63384caa181b0eb78ef860be8c0"
+    },
+    "tool:save_task_signin": {
+      "guid": "fb1465949f0b1afb4f9e591289c0b618"
+    },
+    "tool:search": {
+      "guid": "2f6301c9dba2f6533e9bfb11ff3062bc"
+    },
+    "tool:search_signin": {
+      "guid": "4f10d853810895aa7c53c9b2b4ef9554"
+    },
+    "tool:unread_notifications": {
+      "guid": "38c8c46488f250ae5be77f463a2529d6"
+    },
+    "toolset:chatbot_agent": {
+      "guid": "2d7f6782dc621289c7663157d2df67c5",
+      "canonical": "kProbWu_",
+      "canonical_source": "minted",
+      "type": "agent"
+    },
+    "toolset:hosted_agent_anthropic": {
+      "guid": "6ff74eb2251006ea2dd960d014d405bf",
+      "canonical": "npiLoO7v",
+      "canonical_source": "minted",
+      "type": "agent"
+    },
+    "toolset:hosted_agent_google": {
+      "guid": "acf309309a7a4e7a23ff6d6ad6aa734e",
+      "canonical": "-qv_np-W",
+      "canonical_source": "minted",
+      "type": "agent"
+    },
+    "toolset:team-workspace-mcp": {
+      "guid": "32a578e8294f399557d0d534ae2d8039",
+      "canonical": "team-workspace-mcp",
+      "canonical_source": "code"
+    },
+    "toolset:team-workspace-mcp-signin": {
+      "guid": "6bf9ed7dcaf1c06755ee4c368f67d8a2",
+      "canonical": "team-workspace-mcp-signin",
+      "canonical_source": "code"
+    },
+    "trigger:agents/on_decision": {
+      "guid": "afadba72be4c0bfe9023a91bd1a2fae2"
+    },
+    "trigger:live/app_join": {
+      "guid": "a96aa7e2e64e61c1015c3aabb91965f7"
+    },
+    "trigger:live/connect": {
+      "guid": "9f2fd531f4c3eeeef333b7c185c98cc0"
+    },
+    "trigger:live/crm_join": {
+      "guid": "ebb0ac6f7d8cd9d39cc262b906042766"
+    },
+    "trigger:live/docs_join": {
+      "guid": "8f4826e0d6cca6594b2a46268d1dc071"
+    },
+    "trigger:live/rooms_join": {
+      "guid": "4b2c707de9a28d13d5888f80fc775e56"
+    },
+    "trigger:live/spaces_join": {
+      "guid": "558930f79416c36f970e8b09816f9788"
+    },
+    "trigger:live/typing_join": {
+      "guid": "aa3a58e434d0be816f58361f9053f3ba"
+    },
+    "trigger:live/users_join": {
+      "guid": "b0163d66e034b508bda377fb9e0419dc"
+    },
+    "workflow_test:access: a doc with no space, created on a company, follows crm.read": {
+      "guid": "5fcfb61790fde6f9936046902ee0f4fe"
+    },
+    "workflow_test:access: a guest creates tasks and docs only where the space allows it": {
+      "guid": "86b9ce5486845ad9404d37cd46ce1f85"
+    },
+    "workflow_test:access: a guest walks every door and reaches only their spaces and people": {
+      "guid": "5437cb96fe49ad2df28bf42d4dabbe22"
+    },
+    "workflow_test:access: a member who isn't a manager can't remove anyone, and an outsider can't tell the space exists": {
+      "guid": "9034e05156a2f731e502e31c4198262a"
+    },
+    "workflow_test:access: a private-space doc linked to a company stays not found for a non-member with crm.read": {
+      "guid": "c851ad3789421f6ee869cb2c69be5414"
+    },
+    "workflow_test:access: a refused removal changes neither space_member nor space_ids": {
+      "guid": "7b39d51dabcbb5252ae4088fada35955"
+    },
+    "workflow_test:access: a removed member loses the space on their next call, and the manager is told": {
+      "guid": "a1668e2a73370fe2c882c9450869018c"
+    },
+    "workflow_test:access: adding a guest shows the history warning and changes nothing until it's confirmed": {
+      "guid": "11b15bbfeb51bcc28cd5cbff5f71a604"
+    },
+    "workflow_test:access: an admin outside a DM gets not found, in reads and in lists": {
+      "guid": "3c2174963418c8b01a2c26737d2f7045"
+    },
+    "workflow_test:access: an admin reads a private space, and an agent outside it gets not found": {
+      "guid": "c5e54f79dc248493b108e97d50f44234"
+    },
+    "workflow_test:access: an admin's own key or sign-in reaches only their joined spaces and DMs": {
+      "guid": "322d3566c2c3628ab3aaa1944c101d26"
+    },
+    "workflow_test:access: an agent holding an admin's role still passes only by joining": {
+      "guid": "204fd5e4a9bce6b9b79bb473c37e475e"
+    },
+    "workflow_test:access: an agent or a guest can't be made a manager": {
+      "guid": "712b37bf0f607e663569ec3c9cc26485"
+    },
+    "workflow_test:access: an empty reach lists nothing, and open spaces show without their contents": {
+      "guid": "a2556f85dd3f3037645cf7e6f11eef99"
+    },
+    "workflow_test:access: auth/setup is the only way to set up, and sign-up can't reach it": {
+      "guid": "3c154fecb8aaecc2539116a5520dd06a"
+    },
+    "workflow_test:access: setup writes the first admin's space_ids": {
+      "guid": "87ebee8a1f87af5136b4abdb437dd332"
+    },
+    "workflow_test:access: the last manager can't leave without handing over": {
+      "guid": "8ecb777af0822d3e3ed0e7c0337d5870"
+    },
+    "workflow_test:access: user.space_ids stays in step with space_member through every change": {
+      "guid": "cd2484d78e15881b18dec6f3ddf1f375"
+    },
+    "workflow_test:agent runs: Retry queues a failed run up to three attempts, for anyone but a guest, and a done run has none": {
+      "guid": "6e949eaafa5c3ab38d85b0e4315d98d2"
+    },
+    "workflow_test:agent runs: Stop shuts the gate at once, and a stopped run stays stopped": {
+      "guid": "bdc43df27a836ec178ed4b62261cb3fd"
+    },
+    "workflow_test:agent runs: a DM run stays in that DM, and tasks are out of its reach": {
+      "guid": "bf3d3f2c17c01429de79fa9e0adee88c"
+    },
+    "workflow_test:agent runs: a DM run's message to anyone else asks first, and goes only when a person says yes": {
+      "guid": "a5f84d4f787b4125c2208eaadc2d0075"
+    },
+    "workflow_test:agent runs: a call that doesn't come back fails the run, and tells whoever asked": {
+      "guid": "d6d9725360e60d8846f37f964fe57d46"
+    },
+    "workflow_test:agent runs: a chain takes two hand-offs, a third agent included, and the fourth stays quiet": {
+      "guid": "394cf39f4caf8d449769da84b771e47d"
+    },
+    "workflow_test:agent runs: a claim fails a run whose agent has left the space, and tells whoever asked": {
+      "guid": "294f9d72117d964eb47fae1b8f9ff003"
+    },
+    "workflow_test:agent runs: a claim fails a run whose agent or sponsor has gone": {
+      "guid": "2933daa8ea5bcdc4c9f5f75df9c783ad"
+    },
+    "workflow_test:agent runs: a connected agent is told, and nothing starts": {
+      "guid": "5edd225afb69cdc1407339b8d6a73d4d"
+    },
+    "workflow_test:agent runs: a failed call left unfixed sinks a run that says done, and plain-text failures count": {
+      "guid": "bf44d004735e7dd102cb374c3b89adf1"
+    },
+    "workflow_test:agent runs: a finished run's token can't call tools, and neither can a run out of time": {
+      "guid": "28e2959cc38fc1983db204958a0b2c69"
+    },
+    "workflow_test:agent runs: a guest's mention, assignment, Retry and reply each start nothing, by the routes they'd use": {
+      "guid": "ad6ea47f87033437e380e518de7bf09a"
+    },
+    "workflow_test:agent runs: a mention queues one run at once, for the record that asked, and a retry of the send adds none": {
+      "guid": "337bfc4c9252073716615b55263f9c4c"
+    },
+    "workflow_test:agent runs: a model still finishing a stopped run can't touch the Retry that followed it": {
+      "guid": "6c43fa876befe96dde0b7dccf846f4b2"
+    },
+    "workflow_test:agent runs: a model that errors fails with a plain reason and no key in it": {
+      "guid": "1d12f60f328568bce1604825909992a9"
+    },
+    "workflow_test:agent runs: a person's key and a connected agent's key pass the gate with no run": {
+      "guid": "8c9b04c03092cbf605d147f1f6b8f5b6"
+    },
+    "workflow_test:agent runs: a revoked system connection fails the run with that reason": {
+      "guid": "31ec82ae41444a8a5a03a9548c669e27"
+    },
+    "workflow_test:agent runs: a run handed on is told who handed it on, and still answers to the person who asked": {
+      "guid": "58c88cde9d58f7c4cded62fa758b5a01"
+    },
+    "workflow_test:agent runs: a run keeps each step's tool, outcome and record and nothing it said, and a guest sees the count and no steps": {
+      "guid": "20e8b6ec1d57f5fb61fca210b307be3f"
+    },
+    "workflow_test:agent runs: a run posts notes in its thread as the agent, finishes on report_progress, and tells whoever asked": {
+      "guid": "47165512b09c8bbf447c8edc67601fb2"
+    },
+    "workflow_test:agent runs: a run reads and posts only where it started, even where the agent is a member": {
+      "guid": "7ff555745053bcc2cb4b4c1e2af67012"
+    },
+    "workflow_test:agent runs: a run that leaves nothing at all fails, and is never done": {
+      "guid": "dacf3bba711833b7eba255e6fe13f401"
+    },
+    "workflow_test:agent runs: a run that never reported done fails, however confident its reply": {
+      "guid": "44a964a6ef7b37424dbc0b5ea58b28be"
+    },
+    "workflow_test:agent runs: a run that reported done and whose last reply never came ends done, not timed out": {
+      "guid": "547a5e0146ea8dcdd63e71a17f3079bd"
+    },
+    "workflow_test:agent runs: a slip the agent put right doesn't sink it": {
+      "guid": "ce21d444d367e13726a4cdefa9acbf4f"
+    },
+    "workflow_test:agent runs: a thread takes six hand-offs an hour, and an older one doesn't count": {
+      "guid": "eb9ec5a4dc1cbf6e88165c2f2e63d1c7"
+    },
+    "workflow_test:agent runs: all eleven steps spent without done is the step limit": {
+      "guid": "2b57d557f52a81c1e94b2009f7e8e5f4"
+    },
+    "workflow_test:agent runs: an admin adds a hosted agent with a brief, and its first run is handed that brief": {
+      "guid": "53a10ad0b161e656e402bfbe1ddd117c"
+    },
+    "workflow_test:agent runs: an agent outside the space is flagged before sending, a message naming it starts nothing, and it starts once added": {
+      "guid": "f4273428d089125ad6870c902ec98d58"
+    },
+    "workflow_test:agent runs: an agent with no run, a reply from an agent and an agent naming itself start nothing": {
+      "guid": "c0116bce62170c0807f672d67eae446c"
+    },
+    "workflow_test:agent runs: an agent's daily limit stops it, and not its teammates": {
+      "guid": "babde5659834405070069ad082004bac"
+    },
+    "workflow_test:agent runs: an agent's page shows an admin no run from a DM they're outside, and a member none from a private space they're outside": {
+      "guid": "2d1f6fdabf43232fbcf88c24d170a504"
+    },
+    "workflow_test:agent runs: another agent's reply can't answer a question put to a person": {
+      "guid": "610103904d9e35d3f28a79a22f66ed9e"
+    },
+    "workflow_test:agent runs: asking a question waits for that person, and their reply picks the run up": {
+      "guid": "0202abc57a9aea92eb85e6498d14b62b"
+    },
+    "workflow_test:agent runs: assigning a task queues a run, and a second assignment while it's live doesn't add one": {
+      "guid": "d82df03d84b22388e68633f9e4dbd7c6"
+    },
+    "workflow_test:agent runs: each provider's words for a bad key give the fix, and any other error doesn't blame the key": {
+      "guid": "e0ead2f51dceb896b7ae15ec8be6de6f"
+    },
+    "workflow_test:agent runs: model_ready says which key to set, and never what it holds": {
+      "guid": "25abdbc327e2e5d058c090ee8922f287"
+    },
+    "workflow_test:agent runs: only a person who isn't a guest starts one": {
+      "guid": "75931016750d310bd85f6e9e73854af5"
+    },
+    "workflow_test:agent runs: pausing every agent from the route stops new runs, and only a real admin lifts it": {
+      "guid": "5c97a3714bf21aa91093ed4640080035"
+    },
+    "workflow_test:agent runs: someone who can't reach the record can't stop its run, or even see it": {
+      "guid": "391b58b0367257806848de8bbd2b8355"
+    },
+    "workflow_test:agent runs: the agent writes tasks as itself, inside its space": {
+      "guid": "3cb074e7d7d4f2fd159d4fef40cde539"
+    },
+    "workflow_test:agent runs: the context carries the request, who's here and what the agent can write to": {
+      "guid": "390208d8840ee9902b918b6280e8caa5"
+    },
+    "workflow_test:agent runs: the demo cap counts only in a demo, and never turns back a run already under way": {
+      "guid": "d0a3126e7ac85ed0511964c6e0c907e5"
+    },
+    "workflow_test:agent runs: the demo cap ends further runs as budget, tells whoever asked, and lifts after a day": {
+      "guid": "910cf58581bdbba943a051b0864a16db"
+    },
+    "workflow_test:agent runs: the door refuses a person, a person's key, a connected agent's key, another agent's line and a run that isn't claimed": {
+      "guid": "356e115cf9c517a6441b68eb6a3e1339"
+    },
+    "workflow_test:agent runs: the gate refuses another agent, another connection, a hosted agent outside a run, and a gone sponsor": {
+      "guid": "743302e51cf46fefe95b84133f49c56b"
+    },
+    "workflow_test:agent runs: the runner extends a hosted connection past its old expiry": {
+      "guid": "75f96c096ecd16cf51cd638515c16253"
+    },
+    "workflow_test:agent runs: the slots cap what's going, and the next run stays queued and visible": {
+      "guid": "cfef01245226066aafdaf2716dc1e51e"
+    },
+    "workflow_test:agent runs: the sweep takes back a stale claim, gives up after three, and ends a run out of time": {
+      "guid": "ccd4af24e4366bf8b0c0fb3b2f4731d7"
+    },
+    "workflow_test:agent runs: two agents told to name each other stop at depth 2, and the record says a person can continue": {
+      "guid": "abc281dafd0925dc310541b8675968d3"
+    },
+    "workflow_test:agent runs: two agents with different briefs act differently on the same request": {
+      "guid": "b82abe0314fe6a75704e6a61d73df13c"
+    },
+    "workflow_test:agent runs: waiting and every failure reason come back from the rows as stored, and a guest gets no detail": {
+      "guid": "ea347bd99749f50ed31067cafba089c7"
+    },
+    "workflow_test:agent runs: where the sponsor isn't in the DM, the person who asked decides, and a sweep leaves it with them": {
+      "guid": "eed44b09d20e5b6328f1fab12f569c75"
+    },
+    "workflow_test:agent runs: while agents are paused, what's queued stays queued": {
+      "guid": "1856a826d0ecb8998addacfca271364a"
+    },
+    "workflow_test:agent runs: with two runs going, a third stays queued and anyone on the record can see it": {
+      "guid": "5f9decaacc45e8123a66f17f0c8bcae4"
+    },
+    "workflow_test:agent-access: a read key can't write": {
+      "guid": "eb7a23147e7296356470daab698c7a2c"
+    },
+    "workflow_test:agent-access: a sign-in gets one row, made on first use": {
+      "guid": "05c9d13e2b9feaae94505871844bf8d0"
+    },
+    "workflow_test:agent-access: keys are made within bounds": {
+      "guid": "01bd3d22a29d3d08b0735c33de7a544b"
+    },
+    "workflow_test:agent-access: revoked and expired keys stop at once": {
+      "guid": "45da1e38432aaacd956d184eb39094e0"
+    },
+    "workflow_test:approvals: \"change_role\" is decided by an admin, never the requester": {
+      "guid": "ab643e3fabd44686d2458f9ec9fec087"
+    },
+    "workflow_test:approvals: \"export_crm\" is decided by an admin, never the requester": {
+      "guid": "683ef1c541d893891d55761298ed198b"
+    },
+    "workflow_test:approvals: \"grant_space_access\" is decided by an admin, never the requester": {
+      "guid": "d52f8264b685dba7f64b98e7c2d582b4"
+    },
+    "workflow_test:approvals: \"send_external\" is decided by the person the agent works for, once": {
+      "guid": "e1a2305b9c6fe70137816bc0530e6a3b"
+    },
+    "workflow_test:approvals: a DM a sponsor isn't in has nobody who may decide, so it's refused": {
+      "guid": "6c48a7328b7559008c5849cb5707114e"
+    },
+    "workflow_test:approvals: a delete waits for the sponsor and then goes to the trash as the agent's": {
+      "guid": "4903ca978d24082c78f65a915de82c16"
+    },
+    "workflow_test:approvals: a person who left can't approve, and an agent can't either": {
+      "guid": "81b63ef23689cf432a2bd42608387cbb"
+    },
+    "workflow_test:approvals: a record shows the card to who decides, a line to the rest, and nothing to a guest": {
+      "guid": "3ec019ff896c5cc67bdd7dca84bf6a5f"
+    },
+    "workflow_test:approvals: a request expires": {
+      "guid": "fee65bb28c09a07108e41bb31f5fd9d8"
+    },
+    "workflow_test:approvals: a sole admin who is the sponsor decides an admin-route request": {
+      "guid": "e6f6f483545769cfdf0b3f962fd7bc52"
+    },
+    "workflow_test:approvals: a sponsor outside the space never sees the preview, and the admin route is used": {
+      "guid": "acc0fc6d1a86529615a196a0494783a1"
+    },
+    "workflow_test:approvals: a sponsor-route request appears only for the sponsor, and a preview only to who decides": {
+      "guid": "f353971d2efd93a33ca1d50fae4b1410"
+    },
+    "workflow_test:approvals: an admin sees what waits on someone else, read-only, and nothing in a DM": {
+      "guid": "aa036e69d9dd752f5bf529aba6f82593"
+    },
+    "workflow_test:approvals: an agent removed from the space fails the approval, and the row stays pending": {
+      "guid": "cf57023a09021587de59ff39ead944a5"
+    },
+    "workflow_test:approvals: an approved edit runs with the edited value, showing agent and approver": {
+      "guid": "c5369303352be694fa61171690e0280a"
+    },
+    "workflow_test:approvals: asking only records a request": {
+      "guid": "6a23cb302659c404226a30ef3e672f26"
+    },
+    "workflow_test:approvals: every write tool asks first in a guest space": {
+      "guid": "409ce654b7f465b0f4d84cac95e3c204"
+    },
+    "workflow_test:approvals: guests are noticed through a space and through a DM, and only there": {
+      "guid": "713dc20fd2e3623d20684f0ff61fceb5"
+    },
+    "workflow_test:approvals: request_action checks what it's asked, and asks nothing it can't support": {
+      "guid": "852ef309662f72f03f3a9112b8d95c74"
+    },
+    "workflow_test:approvals: save_task into a guest space waits, and nothing is written until a person says yes": {
+      "guid": "057b6de9e982d730d9ab49066519a1e2"
+    },
+    "workflow_test:base: a notification reaches its person, never the person who caused it": {
+      "guid": "cea8c9f14b9ba04e874245f374fac173"
+    },
+    "workflow_test:base: a reset link works once, and an unknown link does nothing": {
+      "guid": "86ab72293f5f680d1ed6e75d51f499b9"
+    },
+    "workflow_test:base: an invite link signs a new person in, once": {
+      "guid": "3d8eb61f702070266b6336b6596d4417"
+    },
+    "workflow_test:changes: each channel counts in order, and `after` returns only what's newer, ids and no text": {
+      "guid": "72e95d0f1170bc392a61997e84b0ada7"
+    },
+    "workflow_test:changes: only people who may join a channel read its log": {
+      "guid": "856ab5c15993cffdb584eac26adb138d"
+    },
+    "workflow_test:connected: a guest can't reach through a connection, and a sponsor who became a guest stops their agent": {
+      "guid": "d1a268d03f72b9fbaab77ad6d8b71fa8"
+    },
+    "workflow_test:connected: a key can write 60 times in 5 minutes, then waits, and its sponsor hears once": {
+      "guid": "7dd18b9841715ff37ca77d26aceaa206"
+    },
+    "workflow_test:connected: a key's owner, a person, reaches only joined spaces and CRM with crm.read, and acts through the app": {
+      "guid": "05d6c1d9bdac01940784d2c6c74c95b9"
+    },
+    "workflow_test:connected: a person's client asks that person, on the module's own path": {
+      "guid": "a6ed2cd9dffd7038a734750caa3c79c2"
+    },
+    "workflow_test:connected: an agent key writes a task where only the team can read, and the agent is the author": {
+      "guid": "4fb7cfe004a2bcfcf3474241c349ceec"
+    },
+    "workflow_test:connected: if a row with kind agent ever holds another role, its tools refuse": {
+      "guid": "36599a96a0e71514491d54bcc60a3e5d"
+    },
+    "workflow_test:connected: my_inbox gives work oldest first, a cursor moves past it, and a decision arrives there": {
+      "guid": "6a798158b9aabf5c25af633790955062"
+    },
+    "workflow_test:connected: one function gives a record and its timeline, from an endpoint and from a tool": {
+      "guid": "01e08da6e9cfed6e1042df1107609189"
+    },
+    "workflow_test:connected: pausing agents stops a connected agent's writes and not its reads": {
+      "guid": "c2bb4e15a5656494a5d9bea354f88b2d"
+    },
+    "workflow_test:crm runs: a run from a CRM thread reaches CRM only, and an agent asked in the thread updates the deal as itself": {
+      "guid": "69c483e44c89c82cf3053ea8f0fba4e8"
+    },
+    "workflow_test:crm runs: a run from a DM reaches only its conversation, and an agent without crm.read reaches nothing": {
+      "guid": "00432efcc019077185b43323aec75479"
+    },
+    "workflow_test:crm runs: a run in a space updates a linked deal when the agent and the requester hold crm.read, and not otherwise": {
+      "guid": "f73976db271b7481ace99da98acaeeb7"
+    },
+    "workflow_test:crm runs: naming an agent in a note starts a run on that record, and a guest can't": {
+      "guid": "6baa80eb79d77a6a9dfe67637d978e93"
+    },
+    "workflow_test:crm: a contact's details change, and the board's names follow": {
+      "guid": "69ed0916d66118a41cd1050ed0e8cb07"
+    },
+    "workflow_test:crm: a deal's owner hears once, must reach the CRM, and opening the deal reads the item": {
+      "guid": "abb2a84027fbc96c13234d352393e25b"
+    },
+    "workflow_test:crm: a mention of a guest in a note shows the warning, offers no add, and never sends the note's text": {
+      "guid": "4cbe260f44b8032b36618395bc224c49"
+    },
+    "workflow_test:crm: a person adds a company, a contact and a deal, and a retry with the same client id makes no second one": {
+      "guid": "8085744b920b69868d89e8d8e0afc81f"
+    },
+    "workflow_test:crm: a person's own connection reaches CRM records when that person holds crm.read, and nobody else's does": {
+      "guid": "745f5897b743771e46ad52785c42f246"
+    },
+    "workflow_test:crm: a thread on a deal opens on the deal, under its name, and tells its owner": {
+      "guid": "c7fba6c351b23ea0ef6ff33c043d208a"
+    },
+    "workflow_test:crm: a trashed record drops off a panel and its count": {
+      "guid": "abeaa276e5b96a221a0c1b64dd0ca6d3"
+    },
+    "workflow_test:crm: bad input says how to fix it, and nothing is made": {
+      "guid": "9097a4e60e41331222139593041abab8"
+    },
+    "workflow_test:crm: deleting a company takes its people and deals with it, a restore brings the same ones back, and 30 days ends them": {
+      "guid": "84b0e094018156a22395f954c2412502"
+    },
+    "workflow_test:crm: linking a task to a company from chat shows it on the company page, for whoever reaches the task": {
+      "guid": "e2d9494c69d5f221242c7b0ec775cf92"
+    },
+    "workflow_test:crm: moving a deal keeps its place for everyone, stamps a close, and tells the crm channel with ids only": {
+      "guid": "059e3fa488d72cc86e391e888b6a5a8b"
+    },
+    "workflow_test:crm: notes keep their author, links follow their body, and only the author edits": {
+      "guid": "e8d64ad0a1789eb3509c6cbbf11aa72e"
+    },
+    "workflow_test:crm: only admins change the pipeline's stages, and a stage holding deals can't be deleted": {
+      "guid": "d15fb032c7018ff7ae40a1064b241158"
+    },
+    "workflow_test:crm: someone without crm.read reaches nothing, sees a locked chip for a company, and it answers the same as nothing there": {
+      "guid": "42457cb3ec10ad1e3197cfb038a8d73e"
+    },
+    "workflow_test:crm: the board's filters narrow its deals, and each stage counts and sums what's left": {
+      "guid": "68e23a5a024a46dc100b92104cb73004"
+    },
+    "workflow_test:crm: two viewers see different panels on one company, and each count is what that viewer can see": {
+      "guid": "5ef859f3ddce216b5dcfb1483c2bc8ec"
+    },
+    "workflow_test:demo data: a real admin clears every demo-owned row, keeps real work and the pipeline, and can still sign in": {
+      "guid": "9a94f76472ca211fd253a2956162f6a1"
+    },
+    "workflow_test:demo data: clearing is refused for a member and for a demo admin, and changes nothing": {
+      "guid": "e2f31e5a39030d4a19b49c8f3842d0bb"
+    },
+    "workflow_test:demo data: clearing twice changes nothing the second time": {
+      "guid": "e8be1d4e9eb77022ef3af270ce702204"
+    },
+    "workflow_test:docs: a body's links follow it, and restoring a version brings them back": {
+      "guid": "eb654373e56d5306179c25b32394c804"
+    },
+    "workflow_test:docs: a dismissed suggestion tells the run, and the run reports it in its thread": {
+      "guid": "5d08d8e3c85a67b6e95ae57e821887ff"
+    },
+    "workflow_test:docs: a doc in the trash for over 30 days goes for good, with its links and suggestions": {
+      "guid": "2a6dfdbf9ce2c9324f69dc3d28a9c841"
+    },
+    "workflow_test:docs: a doc lives in its space, and only people who reach the space find it": {
+      "guid": "98ebe807c3ca8a741e1ba1f7f97d50eb"
+    },
+    "workflow_test:docs: a doc's screen and list know an agent from a person": {
+      "guid": "43b840bd2b0f83c7845d00f62bde422d"
+    },
+    "workflow_test:docs: a guest reads and can't change what others wrote, and adds a doc only where the space allows it": {
+      "guid": "6d98bdd69a56d9b191eef78593f6090f"
+    },
+    "workflow_test:docs: a link chip names a doc for those who reach it, and locks it for those who don't": {
+      "guid": "ff0d19624d2a9f878f8a9614a8ecdcf0"
+    },
+    "workflow_test:docs: a list shows a doc's first paragraph, never its heading, and its screen names the project of the task it's for": {
+      "guid": "a84aa57046ceed683129429641bccb59"
+    },
+    "workflow_test:docs: a person-to-person race keeps the 409, and yielding won't take a person's words": {
+      "guid": "f9d83bb6dd5ea132e5fb21f672ea0c2f"
+    },
+    "workflow_test:docs: a replacement with marks waits for a person's editor, and says its words plainly": {
+      "guid": "eadf6bacc8df273ef3e1b8ecfc68563a"
+    },
+    "workflow_test:docs: a run that only suggested says so, whatever the model wrote": {
+      "guid": "999e962ad5a914172aa529e0cff96af1"
+    },
+    "workflow_test:docs: a run whose change went in keeps its own words": {
+      "guid": "295cda5945ffe134e8b95eeff16ac86a"
+    },
+    "workflow_test:docs: a run working on a doc shows on it, from the run's own row": {
+      "guid": "37635bfc4b1e397cf6f1385195073692"
+    },
+    "workflow_test:docs: a save a moment ago counts as someone working, even with no keystroke heard": {
+      "guid": "577581a80932a217714cce911e14e8e6"
+    },
+    "workflow_test:docs: a suggestion whose target text changed offers dismiss only: apply can't go through": {
+      "guid": "059b8bfcb86b0eb033e4bfa32621c8ed"
+    },
+    "workflow_test:docs: an addition at the end applies at once and leaves what's there": {
+      "guid": "c2d0865b206d1bf7d55f2970c5c57198"
+    },
+    "workflow_test:docs: an agent has to quote text that's there, once, inside one line": {
+      "guid": "e4d81ae4ebcb84a5f5e3c0b2d834c450"
+    },
+    "workflow_test:docs: an agent's addition to a doc becomes real blocks too, at once and when it waits": {
+      "guid": "d81aca7fb2e8879e42fbd851c5081f47"
+    },
+    "workflow_test:docs: an agent's change applies at once when nobody is working on the doc": {
+      "guid": "8022f502d9313fc94b16f9d5007fc512"
+    },
+    "workflow_test:docs: an agent's change that beat a person's first keystroke steps aside, and comes back as a suggestion": {
+      "guid": "7ded25596253d566b8df9ea9fa15258a"
+    },
+    "workflow_test:docs: an agent's markdown becomes headings, lists, a checklist, marks and code, with no blank blocks": {
+      "guid": "cb1134ccedfcfaae575e70dbc021c20d"
+    },
+    "workflow_test:docs: an agent's words never become HTML, a script or a link that runs": {
+      "guid": "3f7f8050546212543350856adb4ad5e3"
+    },
+    "workflow_test:docs: an archived space's docs read and can't change": {
+      "guid": "f9c10a8d93953d41bfb5d85f0bbb1b77"
+    },
+    "workflow_test:docs: anyone who can edit decides, and a read-only viewer doesn't see the suggestion at all": {
+      "guid": "1066d6eec0a1edf0d0706e5e319ca6c3"
+    },
+    "workflow_test:docs: autosaves reach the doc's own tabs, and the space hears a doc changed once in a while, or when it's renamed": {
+      "guid": "2c97d17f8555eecf7d56bb55b65959ee"
+    },
+    "workflow_test:docs: mentioning an agent in a doc starts a run on that doc, and someone outside the space hears nothing": {
+      "guid": "6f23007dc92e550d93bc969d6c999e1b"
+    },
+    "workflow_test:docs: quotes and apostrophes survive the server's own edit, and words that cross a bold wait for a person": {
+      "guid": "a14989c42fc72c09171b161be8030113"
+    },
+    "workflow_test:docs: save_doc with no id adds a doc to the run's space, and it's the agent's": {
+      "guid": "d453f661a36e5db43cf1154440bdf3bd"
+    },
+    "workflow_test:docs: someone who leaves a space loses the doc they wrote there, and a removed person is refused": {
+      "guid": "ef28a9584c060d3069ac0f4225339119"
+    },
+    "workflow_test:docs: suggestions queue in order, and a new one waits its turn on a quiet doc": {
+      "guid": "c3ef5ef096b37957f476d9e368d5439e"
+    },
+    "workflow_test:docs: while a person types, an agent's change waits as a suggestion and the doc doesn't move": {
+      "guid": "bb3c40dc4bc34c337b5acc1711737df1"
+    },
+    "workflow_test:files: HTML and SVG never get a type a browser shows, whatever they claim, and names lose their paths": {
+      "guid": "6ebccfa78c1fac398850d394b8ec0f82"
+    },
+    "workflow_test:files: a failed row write leaves no row, no bytes and no stored file": {
+      "guid": "8f66f5b8ff8368e5b875105761f60f8d"
+    },
+    "workflow_test:files: a file sits on a task and a company, a company's panel counts it, and only those who reach it see it": {
+      "guid": "b791c35bbab47b2747a19d2ebb3f7a11"
+    },
+    "workflow_test:files: a member lists, opens and fetches a file in their space, and an outsider finds nothing": {
+      "guid": "3e83f3f1d7718c1021776e19c4abda77"
+    },
+    "workflow_test:files: a message carries its own files and nobody else's, a files-only message sends, and deleting it hides them": {
+      "guid": "efd7ca4140ba5eceae03e7c09ab0cfb1"
+    },
+    "workflow_test:files: a retry under the same client id stores once, and one person's id can't answer another's": {
+      "guid": "b13742714083729f326a788f18a07f1f"
+    },
+    "workflow_test:files: a wrong type, a stranger, a guest and a place files can't go are each refused with a reason, and nothing is kept": {
+      "guid": "ad3b5065211443a68ce11ede3dbab146"
+    },
+    "workflow_test:files: an agent saves a file where its run is, shows as its author, and can't reach past that": {
+      "guid": "6a7ed3d1f2d26f57757296b03c01841a"
+    },
+    "workflow_test:files: purge removes stored bytes, the row and its links after 30 days, and leaves a recent delete alone": {
+      "guid": "535ef330a1e3d9f223316ab6a896fae6"
+    },
+    "workflow_test:files: removal from a space refuses the very next download, and what they saw before says nothing now": {
+      "guid": "89a0383a43766235f5ded0aa13073f4e"
+    },
+    "workflow_test:files: storage says which mode applies and its limit, and a file on that path reads back": {
+      "guid": "22c5e383f38b94c91e3db7b710859635"
+    },
+    "workflow_test:files: whoever added a file or manages its space can delete it, a deleted file refuses downloads, and it comes back": {
+      "guid": "8248df09a5aec9e13bfaca04ae5d2b9d"
+    },
+    "workflow_test:first admin: setup makes the default pipeline, and a deal can be created and moved to Won": {
+      "guid": "c85a71c9504a8a72c6b66ee11936987c"
+    },
+    "workflow_test:first minute: a guest can't reach Ask by route, and a member can": {
+      "guid": "74f57e99c9d949233275c06eedb998ed"
+    },
+    "workflow_test:first minute: an expired sample request ends its run with a plain note, and a stopped sample run can't be retried": {
+      "guid": "1446c334d87be335cd16726375a69177"
+    },
+    "workflow_test:first minute: approving the sample run posts the edited words as the agent and ends the run with no model call": {
+      "guid": "58b81aa80255cc80f1c0745584097565"
+    },
+    "workflow_test:first minute: declining the sample run ends it with a note and no model call, and a key set later starts nothing": {
+      "guid": "03bb730960120bcbbf157258880b0023"
+    },
+    "workflow_test:inbox: a DM leaves when it's read, in the channel or in the inbox": {
+      "guid": "6aed5b7bb97f920e7b22eafbc332067e"
+    },
+    "workflow_test:inbox: a finished run's doc in a space the reader left gives no name": {
+      "guid": "4201a7dd800b023bb65cf22f6a26038a"
+    },
+    "workflow_test:inbox: a finished run's line is about the doc it wrote, or else the thread it answered in": {
+      "guid": "2f74f1e38bd025ffe34c6f77ebbbcaa4"
+    },
+    "workflow_test:inbox: a record the reader can't reach gives its line no name": {
+      "guid": "95ae6068b9dfb7d6e7350804b62e85f5"
+    },
+    "workflow_test:inbox: a removed person's items hide, count included, and come back when they're re-added": {
+      "guid": "59c82b6f4cdc4e56ad07f4d36659289a"
+    },
+    "workflow_test:inbox: a reply in a doc's thread names the doc, not the word Thread": {
+      "guid": "290aff60b8848c465839ccbdb826ca42"
+    },
+    "workflow_test:inbox: a space filter narrows the list, and a closed item comes back if the same task returns": {
+      "guid": "9dbda90f22a41084977646c0bbcebb00"
+    },
+    "workflow_test:inbox: a withdrawn mention leaves, and the group drops to what's left": {
+      "guid": "724f9a1701869242fdd2c0ab26879a7c"
+    },
+    "workflow_test:inbox: an agent's line names its record for each reader, stored nowhere, and fresh after a rename": {
+      "guid": "9f24c782dec49c5bf46e2ac67a033056"
+    },
+    "workflow_test:inbox: an approval and an agent's question survive Mark all read": {
+      "guid": "7aa96c485616807bcf520be0591df1e4"
+    },
+    "workflow_test:inbox: every read tells the person's other tabs, and nobody else reaches an item": {
+      "guid": "03a78e20cc5ee84feedeb0ff279ce70b"
+    },
+    "workflow_test:inbox: nobody outside a space hears about it, and its row holds no title": {
+      "guid": "6ef9769c5365bbafce42cdbe45e5507b"
+    },
+    "workflow_test:inbox: one mention gives one item, however many times it's sent, and never to its author": {
+      "guid": "a8f0335f845c1c68ff830aeee1afad67"
+    },
+    "workflow_test:inbox: read and done are separate, and each kind clears by its own rule": {
+      "guid": "048d957a94545601aba09018a6f51241"
+    },
+    "workflow_test:inbox: reading in a channel marks the mention read": {
+      "guid": "342c637dfb982368b1c8774a45fca48a"
+    },
+    "workflow_test:inbox: ten replies group as one row": {
+      "guid": "d69ab30df7ac944bac67bf62493e44f9"
+    },
+    "workflow_test:inbox: when one admin decides, the item clears for the others, and an expired one leaves too": {
+      "guid": "62cbd9b7e6d8aa28fc70b49a81e42ded"
+    },
+    "workflow_test:keys: only an admin or the sponsor manages a connected agent's keys, and a hosted agent has none": {
+      "guid": "959086641deeaed308a954bb92cf546f"
+    },
+    "workflow_test:keys: rotation moves what the old key asked for, and the old key stops": {
+      "guid": "7fb96b9ee2ad835815ae7013e5cf94fb"
+    },
+    "workflow_test:links: a link needs reach on both ends, and otherwise answers not found": {
+      "guid": "27f543a4168c0c2a25757c9a2d9dc011"
+    },
+    "workflow_test:links: a purged target reads Deleted to everyone, and its link rows are gone": {
+      "guid": "4b03d8307f9ee35bc50c5dd8cdd30c3a"
+    },
+    "workflow_test:links: a rename shows everywhere at once, because nothing stored the name": {
+      "guid": "0f9ce3e6ad71cca35a194e179fd7ab91"
+    },
+    "workflow_test:links: a target in an archived space reads Archived to people who reach it, and stays locked for the rest": {
+      "guid": "10c46c8514022f190fbcb4b0fcc2d7a3"
+    },
+    "workflow_test:links: a target in trash reads Deleted, offers Restore if allowed, and a restore brings it back": {
+      "guid": "12bf04ddacc603fc79999f114c4c7ec2"
+    },
+    "workflow_test:links: a viewer who reaches one side gets a locked chip with no title, and no backlink, in the API itself": {
+      "guid": "6dc0bf6bd4ab1cb5506ced49f94ed6ba"
+    },
+    "workflow_test:links: both sides show a link, one row a pair, and a link changes nobody's access": {
+      "guid": "240780feedd5a83873f6bf1286a494b5"
+    },
+    "workflow_test:links: removing a link needs both ends, and leaves a body's other links": {
+      "guid": "eac36ca33ff346dc3c511bc2dbf71103"
+    },
+    "workflow_test:links: saving a body reconciles only its own links, keeps what the saver can't see, and tells nobody": {
+      "guid": "a3f5bd082b4d5dbaf5e4feae8296359a"
+    },
+    "workflow_test:manage: a demo session can't add an agent, change a brief or a sponsor, or revive one, even as an admin": {
+      "guid": "e355fb50c8e4ba0b81232fa1b00b3840"
+    },
+    "workflow_test:manage: a guest can't be named sponsor when adding, handing over or reviving an agent": {
+      "guid": "adf7c138e459c27743a5fe8da136a339"
+    },
+    "workflow_test:manage: a member can't add an agent, change a brief or a sponsor, and a sponsor who's a member can't revive one": {
+      "guid": "e1310e9c50db8f9e55da0877a5c14b58"
+    },
+    "workflow_test:manage: an admin adds a connected agent, its key shows once, its page says it has one, and a revoked key stops at once": {
+      "guid": "d91c54beb32ecb8cdf64ef083c6d08e2"
+    },
+    "workflow_test:manage: no route makes an agent anything but an agent, so none can give it team.manage": {
+      "guid": "846dcc51e23ceced75fa31160f044491"
+    },
+    "workflow_test:members: a missing settings row keeps demo sign-in and sign-up shut": {
+      "guid": "104c89d3a9868c68350424c74f65443d"
+    },
+    "workflow_test:members: a removed person can't use any route, and keeps their name on old work": {
+      "guid": "ecb1d0a7d5fd174589f58f017d26686c"
+    },
+    "workflow_test:members: a reset link for an agent is refused when made and when accepted": {
+      "guid": "f2818c60c45051baf2d319f3951a6ee6"
+    },
+    "workflow_test:members: a reset link is refused for a removed person and a demo person": {
+      "guid": "b2d5ca350c86cd6fe9f1cdc9efa3a809"
+    },
+    "workflow_test:members: a sponsor's agents need a new sponsor, whose keys are then revoked": {
+      "guid": "ba9a96522dad4422957d652c3f237863"
+    },
+    "workflow_test:members: an invite dies with the person who sent it": {
+      "guid": "7a7f720be98bcbb82d509d9bcf720bf8"
+    },
+    "workflow_test:members: end demo mode needs a real admin and the current list of accounts": {
+      "guid": "9ed7e05f14ae8a38f37ec3c48cdde123"
+    },
+    "workflow_test:members: end demo mode shuts all three demo doors": {
+      "guid": "1061fdd29ed6c6f85b563c841b90f43f"
+    },
+    "workflow_test:members: login needs an email, an active row and a person": {
+      "guid": "cda847b300ba00fe40dd291a5b2e6066"
+    },
+    "workflow_test:members: removing yourself or the last admin is refused": {
+      "guid": "f3fa0f9256e7d266b0dda71252e7babb"
+    },
+    "workflow_test:members: setup is refused with an empty SETUP_TOKEN, a wrong token, and a second time": {
+      "guid": "34f53cfaaa1557cd9ee97715d4d8ce44"
+    },
+    "workflow_test:members: setup makes the admin, closed settings, a default space and #general": {
+      "guid": "ff63774516d4d5cbec551e3d40ff4345"
+    },
+    "workflow_test:members: the demo doors open only for active demo rows while demo mode is on": {
+      "guid": "90cc4d15fe03e55673dd2dc1371c3da6"
+    },
+    "workflow_test:members: the old demo password and a null password are refused, not a 500": {
+      "guid": "a15cd02d33f96b7c3a64446c44dbd265"
+    },
+    "workflow_test:mention warning: a manager is told who can't reach the record, and can add them": {
+      "guid": "9c0e8611f8e754a97d8d3b6ab95fa8d9"
+    },
+    "workflow_test:mention warning: a member who can't manage the space gets no add, and non-members still see a locked chip": {
+      "guid": "26e3a07675a4e8b32d9489a6460f8e74"
+    },
+    "workflow_test:mention warning: nothing to say when everyone reaches it, and a sender can't probe a record or audience they don't reach": {
+      "guid": "43da3c3afeea0156b2ebd508207df599"
+    },
+    "workflow_test:messaging: a delete leaves a tombstone with no text, closes its mention and drops its links": {
+      "guid": "e8ffc876ccca89cde31e312ea093c032"
+    },
+    "workflow_test:messaging: a deleted message stops counting as unread": {
+      "guid": "f037a3756fc4eeeba8bf57d05dcd9f26"
+    },
+    "workflow_test:messaging: a mention reaches who it names and who can read it, and holds no message text": {
+      "guid": "11c2eef266c9b2cb0cf6d862731e024a"
+    },
+    "workflow_test:messaging: a new joiner starts read at the latest message, and what follows is unread": {
+      "guid": "f9cfba57f8262b436f02c91146e5e20f"
+    },
+    "workflow_test:messaging: a new space starts with a general channel, and joining it starts read": {
+      "guid": "51d763a1606226518b6453e599f0a462"
+    },
+    "workflow_test:messaging: a record mention links the record, and a reader outside it sees it locked": {
+      "guid": "bfcf39051362e89658626d47c6907371"
+    },
+    "workflow_test:messaging: a retry gives one message and one mention, and takes no new place": {
+      "guid": "e967743c82d51169ee72cbe16b19552b"
+    },
+    "workflow_test:messaging: a send after removal ends not found, and the channel stops answering": {
+      "guid": "a1683456079ab121c6e5edab2b4564bc"
+    },
+    "workflow_test:messaging: a space's manager may delete anyone's message there, and nobody may in someone else's DM": {
+      "guid": "861a23785ca7a1ff0accd093aa15c5d0"
+    },
+    "workflow_test:messaging: a thread is one row per record, is reached as the record is, and counts on its message": {
+      "guid": "e229f7376a90775db5f532d42e42c6f6"
+    },
+    "workflow_test:messaging: a thread on a space's record works, and one inside a DM belongs to the DM's members alone": {
+      "guid": "fe7786013e43f46f2f024fd9c733ebaa"
+    },
+    "workflow_test:messaging: an empty or an overlong message is refused, and an archived space reads but takes no message": {
+      "guid": "5a945199bacdc72e07837e9cb42356fd"
+    },
+    "workflow_test:messaging: anyone who can create in a space can add a channel, once per name": {
+      "guid": "8e8f11ab3b73bd61be75e9b0fb8ab969"
+    },
+    "workflow_test:messaging: every message in a DM is an inbox item, it leaves on reading, and a channel's plain message is not one": {
+      "guid": "e1f9178110ce8deccc3e7c92f1965a02"
+    },
+    "workflow_test:messaging: frames carry ids only, on the space's channel, and a DM's go to its members": {
+      "guid": "aa6397f2565826b62c2f4b02da57be91"
+    },
+    "workflow_test:messaging: messages take the next place in order, and a page reads oldest first": {
+      "guid": "7a762e58b6f3df7d049d5def6a4a0156"
+    },
+    "workflow_test:messaging: nobody outside reads or writes, and it answers the same as nothing there": {
+      "guid": "00d3977fe5e625bdef795f28fbf6624d"
+    },
+    "workflow_test:messaging: only the author edits, and an edit moves the version, mentions the new and withdraws the old": {
+      "guid": "dad848428326dd43b32d979b1563cb1a"
+    },
+    "workflow_test:messaging: read position moves forward only, stops at the newest, and is each person's own": {
+      "guid": "9de76f690d713e49cbf437f4ba4a2512"
+    },
+    "workflow_test:messaging: the same people open the same DM, a guest reaches only their neighbours, and a removed person isn't offered": {
+      "guid": "0c05617de4cc2fab6aec8101042511a6"
+    },
+    "workflow_test:overview: its numbers cover what the person reaches, and first steps read from real rows": {
+      "guid": "6fdb63a2484dc6395f728eb05c098509"
+    },
+    "workflow_test:page: a guest is turned away from an agent's page and its runs by route, and the agent lists give a guest no brief": {
+      "guid": "4549f35c511e28c5bed2c9f798751444"
+    },
+    "workflow_test:pickups: a mention waits for Relay, my_inbox stamps it picked up, and it stays picked up when Relay goes quiet": {
+      "guid": "c0b199d7fe80a7f48961cff6f0e357a7"
+    },
+    "workflow_test:rbac: a demoted manager loses the power at once": {
+      "guid": "dd96cc50ef2bdceb8609b8a2e82a73e8"
+    },
+    "workflow_test:rbac: a human can't be made agent": {
+      "guid": "a6634a822485d4f77dd14f379bcbaa3a"
+    },
+    "workflow_test:rbac: a manager changes a role, and it is recorded": {
+      "guid": "1b269a06f3984425f98dc5828c6ea5c5"
+    },
+    "workflow_test:rbac: a member can't change roles": {
+      "guid": "d58dc0141170a2ef366cd4b093ee5805"
+    },
+    "workflow_test:rbac: an agent can't be made admin": {
+      "guid": "ad35fdc7205a06778917c8b15c1d2474"
+    },
+    "workflow_test:rbac: nobody changes their own role, or a missing person's": {
+      "guid": "33d7562332050eb849c3c2b3bec0e83e"
+    },
+    "workflow_test:resolver: a DM reads only to its members, admins included": {
+      "guid": "8885c0027aa0e7c4f149beb6975e980b"
+    },
+    "workflow_test:runs: a decline starts the run again, a sweep catches one the trigger missed, and a reply doesn't wake it": {
+      "guid": "30d410f9f337daf85fb82c1d3ee8c627"
+    },
+    "workflow_test:runs: a hosted run in a guest space asks, waits, keeps its notes from guests, and starts again on the answer": {
+      "guid": "473c64ad1ad07c0d8cfba07e602f6215"
+    },
+    "workflow_test:search: a deleted company takes its people with it, and a restore brings them back": {
+      "guid": "48c8b4317e17d110e807efcbc2c6d3ee"
+    },
+    "workflow_test:search: a rename shows, a delete leaves, and a restore comes back": {
+      "guid": "82e7701d205794b6d204ecfbf231f097"
+    },
+    "workflow_test:search: all five tools write to it through the change path": {
+      "guid": "8448e24014e2908f3605dac7eba3f91b"
+    },
+    "workflow_test:search: an agent finds only what it may, and a run only where it was asked": {
+      "guid": "4dcf0052ce64e9fcc7ca03dbe44076a5"
+    },
+    "workflow_test:search: an edit replaces a message's words, and a delete takes them": {
+      "guid": "c0536c84e93b014e23371f89721ccfb1"
+    },
+    "workflow_test:search: losing a space takes its records out at once": {
+      "guid": "137a473a338300c6f93366ef76ce6c1b"
+    },
+    "workflow_test:search: nobody finds what they can't reach, in results or the total": {
+      "guid": "e26c75b0292ed7eb3cbe0d938c8708c6"
+    },
+    "workflow_test:sponsor: handing an agent over ends its keys, moves what's waiting to the new sponsor, and leaves its history as it was": {
+      "guid": "89765773d5e6405d5eda4f61511a5d10"
+    },
+    "workflow_test:sweep: a new sponsor takes over what's waiting": {
+      "guid": "7468f491188b2a078dc3f40542bc8a3f"
+    },
+    "workflow_test:sweep: a sponsor hears once about a key that runs out within a week": {
+      "guid": "604385640132301e604512a2e6bd8b56"
+    },
+    "workflow_test:sweep: an agent whose sponsor is gone stops, its keys end, and the admins hear once": {
+      "guid": "380d08173a7be79eb215099d4b447905"
+    },
+    "workflow_test:sweep: an approval whose sponsor left the space moves to the admins, and one in a DM closes": {
+      "guid": "04250e5411335cbd1c149804fe430c43"
+    },
+    "workflow_test:sweep: what nobody decided expires, leaves the inbox and reaches the agent": {
+      "guid": "151f97b1371c6017bdf71c6f463eba40"
+    },
+    "workflow_test:tasks: a column with no room left renumbers itself, and keeps its order": {
+      "guid": "981f817c6e36e924c794e8d760db96c8"
+    },
+    "workflow_test:tasks: a deleted task reads Deleted, leaves the lists, can be restored, and keeps its links": {
+      "guid": "8a4ebdf53088327ee4aaca9d3a292993"
+    },
+    "workflow_test:tasks: a filter narrows the list, its totals agree, and a saved filter is its owner's alone": {
+      "guid": "728d3f7487d2847683152027646025ff"
+    },
+    "workflow_test:tasks: a guest reads, comments and edits only when the space says so": {
+      "guid": "4c81403e381bd097f48a91ba5a367f5c"
+    },
+    "workflow_test:tasks: a member makes a project and a task, and a retry with the same client id makes no second one": {
+      "guid": "c1901dd0170f598ab1226122099aaa46"
+    },
+    "workflow_test:tasks: a mention in a description reaches that person once, makes a link, and leaves when taken out": {
+      "guid": "222db881a5df28c628e899b3bf9281f8"
+    },
+    "workflow_test:tasks: a move lands where it's put, and a second reader sees that order": {
+      "guid": "76b2361aeadfe7931901a4d29a8565fe"
+    },
+    "workflow_test:tasks: a project renames and archives, its tasks stay, and it leaves the default views": {
+      "guid": "47236915ba0c9494dd7a8df7e1e64a81"
+    },
+    "workflow_test:tasks: a task in the trash over 30 days is purged with its thread and links, and a chip reads Deleted to everyone": {
+      "guid": "df9af290503f753d40555cb2cd910572"
+    },
+    "workflow_test:tasks: a thread on a task is reached as the task is, and a reply reaches who it concerns on one grouped line": {
+      "guid": "8c5b25e8c2109b87977f54b3449e9ce0"
+    },
+    "workflow_test:tasks: a title is required and has a limit, and nothing is made": {
+      "guid": "dcbdfb0a3dcb42a579190c3970d0267c"
+    },
+    "workflow_test:tasks: an agent member can be assigned and shows as an agent, and one outside the space can't": {
+      "guid": "6c63d365226afeef204475698ef8543e"
+    },
+    "workflow_test:tasks: an archived space reads and takes no writes, and its tasks leave the all-spaces list": {
+      "guid": "4afeccf8bfbb6ce4580c086ae6f75c11"
+    },
+    "workflow_test:tasks: assigning reaches the person's inbox, and a reassign, a finish and a delete take it back out": {
+      "guid": "a352e30b5190b830abb23084d66a91c8"
+    },
+    "workflow_test:tasks: every write lands on the space's channel in order, with ids and no text": {
+      "guid": "0d8bb0bb94f4e65e880d655c53638e2a"
+    },
+    "workflow_test:tasks: moving before a task that left its column falls to the end, and never fails": {
+      "guid": "62fbe800e0b89e269de16d8b1b9c191e"
+    },
+    "workflow_test:tasks: nobody outside reads or writes, and it answers the same as nothing there": {
+      "guid": "8ac3845f97642be1bf928eb9b50d7b90"
+    },
+    "workflow_test:tasks: opening a task reads its inbox items, and only this person's": {
+      "guid": "1bb3393cbbbae68bd76630812eda2d4e"
+    },
+    "workflow_test:tasks: someone who leaves a space is taken off its tasks, with a notice on each and one inbox line for who made them": {
+      "guid": "2e283a12414a0b01d8dd1b1e15f52585"
+    },
+    "workflow_test:tasks: status, priority, due date and title each change alone, and finishing stamps it": {
+      "guid": "44f4d009cacff4b639bd2ddc00853ded"
+    }
+  }
+}

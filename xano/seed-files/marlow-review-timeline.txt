@@ -1,0 +1,7 @@
+Marlow review timeline
+
+Thursday: final spec spreadsheet from Hana. Specs lock the same day.
+Thursday evening: review link to Riley, with the size guide on the product page.
+Friday to Tuesday: Marlow reviews. One round of changes.
+Wednesday: live payment keys, then the end-to-end checkout test.
+The 14th: launch.

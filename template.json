@@ -1,0 +1,442 @@
+{
+  "name": "Commons",
+  "track": "starter",
+  "signature": "kanban",
+  "screens": [
+    {
+      "name": "Overview",
+      "path": "/"
+    },
+    {
+      "name": "Inbox",
+      "path": "/inbox"
+    },
+    {
+      "name": "Chat",
+      "path": "/chat"
+    },
+    {
+      "name": "Conversation",
+      "path": "/chat/:id"
+    },
+    {
+      "name": "Tasks",
+      "path": "/tasks"
+    },
+    {
+      "name": "Task",
+      "path": "/tasks/:id"
+    },
+    {
+      "name": "Docs",
+      "path": "/docs"
+    },
+    {
+      "name": "Doc",
+      "path": "/docs/:id"
+    },
+    {
+      "name": "Customers",
+      "path": "/crm"
+    },
+    {
+      "name": "Company",
+      "path": "/crm/companies/:id"
+    },
+    {
+      "name": "Deal",
+      "path": "/crm/deals/:id"
+    },
+    {
+      "name": "Files",
+      "path": "/files"
+    },
+    {
+      "name": "File",
+      "path": "/files/:id"
+    },
+    {
+      "name": "Team",
+      "path": "/team"
+    },
+    {
+      "name": "Agent",
+      "path": "/team/agents/:id"
+    }
+  ],
+  "roles": [
+    "admin",
+    "member",
+    "guest",
+    "agent"
+  ],
+  "permissions": [
+    "team.manage",
+    "space.oversee",
+    "space.create",
+    "workspace.read",
+    "crm.read",
+    "crm.manage",
+    "docs.edit"
+  ],
+  "agentTools": [
+    "my_inbox",
+    "search",
+    "read_record",
+    "post_message",
+    "save_task",
+    "save_doc",
+    "save_crm_record",
+    "save_file",
+    "report_progress",
+    "request_action",
+    "check_approval"
+  ],
+  "assistantTools": [
+    "recent_activity",
+    "unread_notifications",
+    "check_my_approval"
+  ],
+  "approvals": [
+    "send_external",
+    "send_dm",
+    "save_task",
+    "save_doc",
+    "save_crm_record",
+    "save_file",
+    "delete_record",
+    "bulk_change",
+    "export_crm",
+    "grant_space_access",
+    "change_role"
+  ],
+  "live": [
+    "message",
+    "conversation",
+    "task",
+    "project",
+    "doc",
+    "company",
+    "contact",
+    "deal",
+    "crm_note",
+    "file",
+    "record_link",
+    "agent_run"
+  ],
+  "notifications": [
+    "mention",
+    "assigned",
+    "reply",
+    "dm",
+    "approval",
+    "approval_decided",
+    "agent_question",
+    "agent_result",
+    "agent_stopped"
+  ],
+  "audit": {
+    "liveWriteExempt": [
+      {
+        "table": "search_entry",
+        "reason": "Search's own copy, written by app/changed and each message's write: the write it follows has already been announced."
+      },
+      {
+        "table": "change_log",
+        "reason": "The change path itself: app/changed and inbox frames write here, so it can't call app/changed about its own writes."
+      },
+      {
+        "table": "change_channel",
+        "reason": "The change path itself: app/changed and inbox frames write here, so it can't call app/changed about its own writes."
+      },
+      {
+        "table": "message",
+        "reason": "Too busy for app/changed and its activity row: a send takes its place, then publishes an ids-only hint through changes/record (messages/hint)."
+      },
+      {
+        "table": "conversation_read",
+        "reason": "A person's own read position, which nobody else needs to hear about: their other tabs get an ids-only hint through changes/record."
+      },
+      {
+        "table": "conversation_member",
+        "reason": "Who's in a DM is private, and app/changed would announce it on the shared app channel: its members hear through changes/record on their own channels (messages/hint)."
+      },
+      {
+        "table": "task_view",
+        "reason": "A person's own saved filter, which nobody else needs to hear about: their other tabs get an ids-only hint through changes/record."
+      },
+      {
+        "table": "agent_run",
+        "reason": "A run's own state, written many times a minute: agents/changed publishes an ids-only frame on its space or to the DM's members, through changes/record, after each change."
+      },
+      {
+        "table": "doc_state",
+        "reason": "A doc's working notes, written on a keystroke and on every save, and read only by the server: nobody's screen shows them."
+      },
+      {
+        "table": "doc",
+        "reason": "An autosave must not wake every tab in a space: docs/changed tells the doc's own tabs each save and the space only when it matters. Saving a named version changes only its history note, which no other screen shows."
+      },
+      {
+        "table": "doc_version",
+        "reason": "A doc's history, which only the open history sheet reads: it asks when it opens."
+      }
+    ]
+  },
+  "qa": {
+    "maxLinks": 100,
+    "workspace": {
+      "checks": [
+        {
+          "gate": "concurrent senders",
+          "run": [
+            "frontend/scripts/chat-check.mjs",
+            "--backend",
+            "{backend}",
+            "--frontend",
+            "{frontend}",
+            "--out",
+            "{out}",
+            "--concurrent-only"
+          ]
+        },
+        {
+          "gate": "concurrent writers",
+          "run": [
+            "frontend/scripts/change-path-check.mjs",
+            "{backend}"
+          ]
+        },
+        {
+          "gate": "agent state",
+          "run": [
+            "frontend/scripts/speed-check.mjs",
+            "--backend",
+            "{backend}",
+            "--frontend",
+            "{frontend}",
+            "--out",
+            "{out}",
+            "--only",
+            "agent-state"
+          ]
+        },
+        {
+          "gate": "keyboard",
+          "run": [
+            "frontend/scripts/keyboard-check.mjs",
+            "--backend",
+            "{backend}",
+            "--frontend",
+            "{frontend}",
+            "--out",
+            "{out}"
+          ]
+        },
+        {
+          "gate": "leaks",
+          "run": [
+            "frontend/scripts/access-check.mjs",
+            "--backend",
+            "{backend}",
+            "--frontend",
+            "{frontend}",
+            "--out",
+            "{out}",
+            "--only",
+            "leaks"
+          ]
+        },
+        {
+          "gate": "guest walk",
+          "run": [
+            "frontend/scripts/access-check.mjs",
+            "--backend",
+            "{backend}",
+            "--frontend",
+            "{frontend}",
+            "--out",
+            "{out}",
+            "--only",
+            "guest"
+          ]
+        },
+        {
+          "gate": "removal",
+          "run": [
+            "frontend/scripts/access-check.mjs",
+            "--backend",
+            "{backend}",
+            "--frontend",
+            "{frontend}",
+            "--out",
+            "{out}",
+            "--only",
+            "removal"
+          ]
+        },
+        {
+          "gate": "emptied workspace and demo doors",
+          "run": [
+            "frontend/scripts/real-use-check.mjs",
+            "--backend",
+            "{backend}",
+            "--frontend",
+            "{frontend}",
+            "--out",
+            "{out}"
+          ]
+        },
+        {
+          "gate": "run start",
+          "target": "keyed",
+          "run": [
+            "frontend/scripts/speed-check.mjs",
+            "--backend",
+            "{backend}",
+            "--frontend",
+            "{frontend}",
+            "--out",
+            "{out}",
+            "--only",
+            "run-start"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "bar": 4.5,
+    "floor": 4,
+    "runs": 4,
+    "views": [
+      {
+        "name": "overview",
+        "bar": 4.75
+      },
+      {
+        "name": "chat",
+        "bar": 4.75
+      },
+      {
+        "name": "tasks",
+        "bar": 4.75
+      },
+      {
+        "name": "docs",
+        "bar": 4.75
+      },
+      {
+        "name": "customers",
+        "bar": 4.75
+      },
+      {
+        "name": "files",
+        "bar": 4.75
+      }
+    ],
+    "capture": [
+      {
+        "name": "overview",
+        "view": "overview",
+        "path": "/",
+        "actions": [
+          {
+            "wait": "[data-kit='stat-card']"
+          }
+        ]
+      },
+      {
+        "name": "chat",
+        "view": "chat",
+        "path": "/chat",
+        "actions": [
+          {
+            "wait": "[data-testid='composer-input']"
+          }
+        ]
+      },
+      {
+        "name": "tasks",
+        "view": "tasks",
+        "path": "/tasks",
+        "actions": [
+          {
+            "wait": "main [data-testid='new-task-button']"
+          }
+        ]
+      },
+      {
+        "name": "task-open",
+        "view": "tasks",
+        "path": "/tasks",
+        "actions": [
+          {
+            "click": "main a[href^='/tasks/']"
+          },
+          {
+            "frames": 3
+          },
+          {
+            "wait": "[data-testid='task-detail']"
+          }
+        ]
+      },
+      {
+        "name": "docs",
+        "view": "docs",
+        "path": "/docs",
+        "actions": [
+          {
+            "wait": "[data-testid='docs-page']"
+          }
+        ]
+      },
+      {
+        "name": "doc-open",
+        "view": "docs",
+        "path": "/docs",
+        "actions": [
+          {
+            "click": "main a[href^='/docs/']"
+          },
+          {
+            "wait": "[data-testid='doc-page']"
+          }
+        ]
+      },
+      {
+        "name": "customers",
+        "view": "customers",
+        "path": "/crm",
+        "actions": [
+          {
+            "wait": "[data-testid='crm-board']"
+          }
+        ]
+      },
+      {
+        "name": "files",
+        "view": "files",
+        "path": "/files",
+        "actions": [
+          {
+            "wait": "[data-testid='files-page']"
+          }
+        ]
+      },
+      {
+        "name": "palette",
+        "path": "/",
+        "actions": [
+          {
+            "press": "Control+k"
+          },
+          {
+            "wait": "[cmdk-root]"
+          }
+        ]
+      }
+    ]
+  }
+}

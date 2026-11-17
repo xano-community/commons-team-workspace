@@ -1,0 +1,24 @@
+// The template kit (CRAFT.md §16): owned source, styled by its own theme (theme.css, kit.css). Edit freely.
+export { AppShell, initialsOf, type MenuItem, type NavGroup, type NavItem } from "./app-shell";
+export { ProfilePage, ProfileSection, type PasswordRule } from "./profile";
+export { ACCENTS, appAccent, setAccent, setThemeMode, useTheme, type Accent, type ThemeMode } from "./theme";
+export { AccentChoice, AppearanceSettings, ThemeChoice } from "./appearance";
+export { Segmented, SettingRow, type SegmentedOption } from "./segmented";
+export { CommandPalette, PaletteButton, closeCommandPalette, isCommandPaletteOpen, openCommandPalette, toggleCommandPalette, type PaletteItem } from "./command-palette";
+export { KeyHint } from "./key-hint";
+export { SplitView, phonePane } from "./split-view";
+export { DataList, Pager, type Column } from "./data-list";
+export { useLoad, optimistic } from "./data";
+export { addDays, dayKey, fromDayKey, isToday, isWeekend, startOfDay, startOfMonth, startOfWeek, toDate, useWeekStart, WeekStartProvider, type WeekStart } from "./dates";
+export { FilterSelect, SearchInput, StatusTabs, Toolbar, type TabOption } from "./filter-bar";
+export { FirstRun, type FirstRunStep } from "./first-run";
+export { KanbanBoard, KanbanCard, type KanbanColumn } from "./kanban";
+export { isTyping, modKey, useHotkey } from "./shortcuts";
+export { Sparkline, StatCard, perDay } from "./stat-card";
+export { EmptyState, LoadError, PageHeader } from "./states";
+export { StatusBadge, TONE_DOT, TONE_EDGE, type ItemStatus, type Tone } from "./status-badge";
+export { Ago, DateLabel, dateFormat, relative, shortDate } from "./time";
+export { rememberedHref, useOpenParam, useUrlState } from "./url-state";
+export { Avatar, AvatarStack, type AvatarKind, type AvatarSize, type Face } from "./avatar";
+export { DueLabel, PriorityBars, PriorityMark } from "./marks";
+export { Panel, PanelList, PanelRow } from "./panel";

@@ -1,0 +1,11 @@
+Old URLs with no new home, from the redirect check.
+
+/blog/winter-storage-tips
+  Last edited 2021. Nothing on the new site covers this.
+  Suggest: redirect to /care, or bring the post across.
+
+/blog/meet-the-frame-builders
+  Still gets traffic from a magazine link.
+  Suggest: keep it, and move it to /about/workshop.
+
+All 41 old product URLs have a match. Nothing else is open.

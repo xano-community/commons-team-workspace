@@ -1,0 +1,13 @@
+model,frame,weight_kg,gears,price_usd,status
+Ridgeway 1,aluminium,10.4,18,1290,final
+Ridgeway 2,aluminium,9.8,22,1640,final
+Ridgeway Carbon,carbon,8.1,22,2890,final
+Fen City,steel,12.6,8,890,final
+Fen Step,steel,13.1,8,940,final
+Dale Tour,steel,12.2,27,1480,final
+Dale Tour Disc,steel,12.5,27,1620,waiting on brakes
+Dale Gravel,aluminium,10.9,22,1720,final
+Moor Trail,aluminium,12.8,12,1540,final
+Moor Trail Pro,carbon,11.2,12,2790,final
+Kit 20,aluminium,8.9,1,420,final
+Kit 24,aluminium,10.1,7,520,waiting on photos
